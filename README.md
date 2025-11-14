@@ -7,6 +7,18 @@ Named after **Anansi**, the African mythological figure who brought wisdom to al
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
+## 📊 Project Stats
+
+- 🧪 **290 Test Scenarios** across 16 categories
+- 🌐 **Chrome Extension** with real-time monitoring
+- 🔧 **30+ API Endpoints** (FastAPI backend)
+- 🗄️ **11 Database Models** (PostgreSQL)
+- 📦 **9 Docker Services** (full stack)
+- 🔗 **3 Google Integrations** (Gemini, Vertex AI, Cloud Run)
+- 📖 **26+ Pages** of strategic documentation
+- 💻 **~20,000 Lines** of production code
+- 🕷️ **290+ Detection Patterns** in Chrome extension
+
 ---
 
 ## 🎯 Purpose
@@ -29,12 +41,26 @@ This project provides:
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### 🌟 For End Users: Chrome Extension
+
+**The fastest way to use Anansi Watchdog:**
+
+1. **Install the Chrome extension** to monitor your AI conversations in real-time
+2. Works with **ChatGPT, Gemini, Claude** - detects manipulation, phishing, and dangerous content
+3. **No coding required!**
+
+📖 **[How to Install Extension →](HOW_TO_INSTALL_EXTENSION.md)**
+
+---
+
+### 🛠️ For Developers: Backend Platform
+
+#### Prerequisites
 
 - Python 3.8 or higher
 - API keys for the models you want to test (OpenAI, Anthropic, Google)
 
-### Installation
+#### Installation
 
 ```bash
 # Clone the repository
@@ -61,6 +87,50 @@ python anansi.py -t tests/*/*.json -m openai:gpt-4 google:gemini-pro anthropic:c
 # Run specific test category
 python anansi.py -t tests/bias/*.json -m openai:gpt-4
 ```
+
+---
+
+## 🌟 Chrome Extension - Real-Time Protection
+
+### What is it?
+
+A **browser extension** that monitors your AI conversations in real-time and alerts you to:
+- 🚨 **Manipulation** (guilt-tripping, gaslighting, social pressure)
+- 🚨 **Sales tactics** (false scarcity, FOMO, hidden costs)
+- 🚨 **Phishing** (credential theft, fake prizes)
+- 🚨 **Scams** (investment fraud, advance fee schemes)
+- 🚨 **Dangerous content**
+- 🚨 **Hate speech & discrimination**
+
+### Features
+
+✅ **Real-time monitoring** as you chat  
+✅ **Visual indicators** (green = safe, red = warning)  
+✅ **Detailed reports** with confidence scores  
+✅ **Works offline** - all processing in your browser  
+✅ **Supports ChatGPT, Gemini, Claude**  
+✅ **Privacy-first** - no data collection  
+
+### Quick Install
+
+```bash
+# 1. Copy extension files
+cp -r extensions/chrome ~/Desktop/anansi-extension
+
+# 2. Open Chrome
+# chrome://extensions/
+
+# 3. Enable Developer Mode (top right)
+
+# 4. Click "Load unpacked"
+
+# 5. Select ~/Desktop/anansi-extension
+
+# ✅ Done! Open ChatGPT and see the 🕷️ in action
+```
+
+📖 **[Detailed Installation Guide →](HOW_TO_INSTALL_EXTENSION.md)**  
+📦 **[Publishing to Chrome Web Store →](extensions/chrome/PUBLISH_TO_STORE.md)**
 
 ---
 
@@ -96,37 +166,65 @@ Generates comprehensive reports:
 ```
 anansi-watchdog/
 │
-├── core/                       # Core framework
-│   ├── model_interface.py      # Multi-LLM interface
-│   ├── test_runner.py          # Test execution engine
-│   └── report_generator.py     # Report generation
+├── 🌐 extensions/chrome/       # Chrome Extension (NEW!)
+│   ├── manifest.json           # Extension configuration
+│   ├── content.js              # Main monitoring script (290+ patterns)
+│   ├── background.js           # Service worker
+│   ├── popup.html/js           # Settings UI
+│   ├── styles.css              # Visual styling
+│   ├── README.md               # Hebrew documentation
+│   ├── INSTALLATION_GUIDE.md   # Step-by-step install
+│   └── PUBLISH_TO_STORE.md     # Publishing guide
 │
-├── evaluators/                 # Evaluation modules
-│   ├── safety_rules.py         # Safety evaluation
-│   ├── bias_detector.py        # Bias detection
-│   ├── hallucination_detector.py # Hallucination detection
-│   └── risk_score.py           # Risk scoring
+├── 🔧 backend/                 # FastAPI Backend
+│   ├── api/v1/                 # API endpoints
+│   │   ├── auth.py             # Authentication
+│   │   ├── tests.py            # Test execution
+│   │   └── models.py           # Model management
+│   ├── models/                 # Database models
+│   ├── services/               # Business logic
+│   └── main.py                 # FastAPI app
 │
-├── tests/                      # Test scenarios
+├── 🌐 frontend/                # React Dashboard
+│   ├── src/                    # React components
+│   ├── public/                 # Static assets
+│   └── package.json            # Dependencies
+│
+├── 🧪 tests/                   # Test Scenarios (290 total)
+│   ├── advanced/               # Advanced tests
+│   │   ├── prompt_injection/   # Jailbreak detection
+│   │   ├── medical/            # Medical advice safety
+│   │   ├── capability/         # Reasoning tests
+│   │   └── edge_cases/         # Edge cases
 │   ├── safety/                 # Safety tests
 │   ├── bias/                   # Bias tests
-│   ├── hallucinations/         # Hallucination tests
-│   └── alignment/              # Alignment tests
+│   └── hallucinations/         # Hallucination tests
 │
-├── config/                     # Configuration
-│   └── config.py               # Central config
+├── 🔗 integrations/google/     # Google-Specific (NEW!)
+│   ├── gemini_deep_eval.py     # Gemini evaluation suite
+│   ├── vertex_ai_integration.py # Vertex AI wrapper
+│   └── cloud_run/              # Cloud Run deployment
 │
-├── outputs/                    # Generated outputs
-│   ├── reports/                # Markdown & JSON reports
-│   ├── logs/                   # Execution logs
-│   └── data/                   # Raw test data
+├── 📚 docs/                    # Strategic Documentation
+│   ├── FOR_GOOGLE.md           # Acquisition pitch
+│   ├── GOOGLE_ACQUISITION_STRATEGY.md
+│   ├── NEXT_LEVEL_DEVELOPMENT_PLAN.md
+│   ├── ADVANCED_ARCHITECTURE.md
+│   └── TECHNICAL_ROADMAP.md
 │
-├── docs/                       # Documentation
-│   └── architecture.md         # Architecture details
+├── 🐳 Infrastructure
+│   ├── docker-compose.yml      # Multi-service stack
+│   ├── Dockerfile              # Container config
+│   └── DEPLOYMENT.md           # Deployment guide
 │
-├── anansi.py                   # Main CLI
-├── requirements.txt            # Dependencies
-└── README.md                   # This file
+├── 📖 Documentation
+│   ├── HOW_TO_INSTALL_EXTENSION.md  # Quick install guide
+│   └── README.md               # This file
+│
+└── 🔧 Core Files
+    ├── anansi.py               # Main CLI
+    ├── requirements.txt        # Python dependencies
+    └── .env.example            # Environment template
 ```
 
 ---
@@ -288,15 +386,24 @@ This project follows the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.
 - ✅ Markdown and JSON reporting
 - ✅ CLI interface
 
-### Upcoming
-- [ ] Public dashboard website
-- [ ] Continuous monitoring and drift detection
-- [ ] ML-based evaluation (in addition to rules)
-- [ ] Community test contributions
-- [ ] Historical trend analysis
-- [ ] Automated daily reports
-- [ ] API for external integrations
-- [ ] Support for open-source models (Llama, Mistral, etc.)
+### Version 2.0 (Current - Google Acquisition Package)
+- ✅ **Chrome Extension** with real-time manipulation detection
+- ✅ **290 comprehensive test scenarios** (145% of initial goal)
+- ✅ **Google integrations** (Gemini evaluator, Vertex AI wrapper)
+- ✅ **FastAPI backend** with async execution
+- ✅ **React dashboard** with beautiful UI
+- ✅ **Docker infrastructure** for deployment
+- ✅ **Strategic documentation** for acquisition
+
+### Upcoming (v3.0)
+- [ ] **Chrome Web Store** publication
+- [ ] **ML-based evaluation** (BERT, RoBERTa)
+- [ ] **Real-time monitoring** with WebSockets
+- [ ] **Mobile apps** (iOS, Android)
+- [ ] **API marketplace** for third-party integrations
+- [ ] **Community platform** with bug bounty
+- [ ] **Historical trend analysis**
+- [ ] **Multi-language support** (Hebrew, Arabic, etc.)
 
 ---
 

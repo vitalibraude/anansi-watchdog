@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anansi Watchdog - הגדרות</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      width: 400px;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+    }
+    
+    .container {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    
+    .logo {
+      font-size: 48px;
+      margin-bottom: 5px;
+    }
+    
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #1f2937;
+      margin-bottom: 3px;
+    }
+    
+    .subtitle {
+      font-size: 12px;
+      color: #6b7280;
+    }
+    
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .stat-card {
+      background: #f9fafb;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+    }
+    
+    .stat-number {
+      font-size: 24px;
+      font-weight: bold;
+      color: #667eea;
+    }
+    
+    .stat-label {
+      font-size: 10px;
+      color: #6b7280;
+      margin-top: 2px;
+    }
+    
+    .settings {
+      margin-top: 20px;
+    }
+    
+    .setting-group {
+      margin-bottom: 15px;
+    }
+    
+    .setting-label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 5px;
+    }
+    
+    .toggle-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background: #f9fafb;
+      border-radius: 6px;
+    }
+    
+    .toggle-label {
+      font-size: 13px;
+      color: #374151;
+    }
+    
+    .toggle {
+      position: relative;
+      width: 48px;
+      height: 24px;
+    }
+    
+    .toggle input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #cbd5e1;
+      transition: 0.3s;
+      border-radius: 24px;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: 0.3s;
+      border-radius: 50%;
+    }
+    
+    input:checked + .slider {
+      background-color: #667eea;
+    }
+    
+    input:checked + .slider:before {
+      transform: translateX(24px);
+    }
+    
+    .input-group {
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 13px;
+      transition: border-color 0.2s;
+    }
+    
+    input[type="text"]:focus,
+    input[type="number"]:focus {
+      outline: none;
+      border-color: #667eea;
+    }
+    
+    .help-text {
+      font-size: 11px;
+      color: #6b7280;
+      margin-top: 3px;
+    }
+    
+    .button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    
+    .button:hover {
+      transform: translateY(-2px);
+    }
+    
+    .button:active {
+      transform: translateY(0);
+    }
+    
+    .status-message {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      text-align: center;
+      display: none;
+    }
+    
+    .status-message.success {
+      background: #d1fae5;
+      color: #065f46;
+      display: block;
+    }
+    
+    .status-message.error {
+      background: #fee2e2;
+      color: #991b1b;
+      display: block;
+    }
+    
+    .footer {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 11px;
+      color: #6b7280;
+    }
+    
+    .footer a {
+      color: #667eea;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">🕷️</div>
+      <div class="title">Anansi Watchdog</div>
+      <div class="subtitle">מגן מפני מניפולציה של AI</div>
+    </div>
+    
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-number" id="messagesScanned">0</div>
+        <div class="stat-label">הודעות נסרקו</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="violationsFound">0</div>
+        <div class="stat-label">בעיות נמצאו</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="warningsIssued">0</div>
+        <div class="stat-label">התראות</div>
+      </div>
+    </div>
+    
+    <div class="settings">
+      <h3 style="font-size: 14px; margin-bottom: 10px; color: #374151;">⚙️ הגדרות</h3>
+      
+      <div class="setting-group">
+        <div class="toggle-container">
+          <span class="toggle-label">הפעל ניטור</span>
+          <label class="toggle">
+            <input type="checkbox" id="enabledToggle" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="setting-group">
+        <div class="toggle-container">
+          <span class="toggle-label">הצג התראות</span>
+          <label class="toggle">
+            <input type="checkbox" id="showWarningsToggle" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="setting-group">
+        <div class="toggle-container">
+          <span class="toggle-label">טשטש תוכן מסוכן</span>
+          <label class="toggle">
+            <input type="checkbox" id="blockUnsafeToggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="setting-group">
+        <label class="setting-label">מפתח API (אופציונלי)</label>
+        <div class="input-group">
+          <input type="text" id="apiKeyInput" placeholder="הזן API key...">
+          <div class="help-text">להשארה ריקה לשימוש במצב מקומי</div>
+        </div>
+      </div>
+      
+      <div class="setting-group">
+        <label class="setting-label">סף בטיחות (0-100)</label>
+        <div class="input-group">
+          <input type="number" id="thresholdInput" min="0" max="100" value="80">
+          <div class="help-text">ציון מינימום לתוכן בטוח (ברירת מחדל: 80)</div>
+        </div>
+      </div>
+      
+      <button class="button" id="saveButton">💾 שמור הגדרות</button>
+      
+      <div class="status-message" id="statusMessage"></div>
+    </div>
+    
+    <div class="footer">
+      <p>גרסה 1.0.0 | <a href="https://github.com/yourusername/anansi-watchdog" target="_blank">GitHub</a></p>
+      <p style="margin-top: 5px;">נוצר עם ❤️ על ידי Anansi Team</p>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

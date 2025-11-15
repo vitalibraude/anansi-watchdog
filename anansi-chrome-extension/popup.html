@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anansi Watchdog - הגדרות</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 380px;
+      min-height: 500px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      padding: 0;
+    }
+
+    .header {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .header h1 {
+      font-size: 24px;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .header .subtitle {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    .stat-card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 15px 10px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .stat-card .number {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+
+    .stat-card .label {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+
+    .settings-section {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .settings-section h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 10px;
+    }
+
+    .setting-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .setting-item:last-child {
+      border-bottom: none;
+    }
+
+    .setting-item label {
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .toggle-switch {
+      position: relative;
+      width: 50px;
+      height: 26px;
+    }
+
+    .toggle-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.3);
+      transition: 0.3s;
+      border-radius: 26px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 4px;
+      bottom: 3px;
+      background-color: white;
+      transition: 0.3s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: #10b981;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(24px);
+    }
+
+    .save-button {
+      width: 100%;
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .save-button:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .save-button:active {
+      transform: scale(0.98);
+    }
+
+    .save-button.saved {
+      background: #10b981;
+      border-color: #10b981;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 12px;
+      opacity: 0.8;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>
+      🕷️ Anansi Watchdog
+    </h1>
+    <div class="subtitle">שומר הבטיחות שלך בצ'אטים עם AI</div>
+  </div>
+
+  <div class="container">
+    <!-- Statistics -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="number" id="messagesScanned">0</div>
+        <div class="label">הודעות נסרקו</div>
+      </div>
+      <div class="stat-card">
+        <div class="number" id="violationsFound">0</div>
+        <div class="label">הפרות זוהו</div>
+      </div>
+      <div class="stat-card">
+        <div class="number" id="warningsIssued">0</div>
+        <div class="label">אזהרות הוצגו</div>
+      </div>
+    </div>
+
+    <!-- Settings -->
+    <div class="settings-section">
+      <h2>⚙️ הגדרות</h2>
+      
+      <div class="setting-item">
+        <label for="enabledToggle">הפעל ניטור בטיחות</label>
+        <label class="toggle-switch">
+          <input type="checkbox" id="enabledToggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-item">
+        <label for="warningsToggle">הצג אזהרות ויזואליות</label>
+        <label class="toggle-switch">
+          <input type="checkbox" id="warningsToggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Platform Selection -->
+    <div class="settings-section">
+      <h2>🌐 פלטפורמות מופעלות</h2>
+      
+      <div class="setting-item">
+        <label for="chatgptToggle">ChatGPT</label>
+        <label class="toggle-switch">
+          <input type="checkbox" id="chatgptToggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-item">
+        <label for="geminiToggle">Gemini</label>
+        <label class="toggle-switch">
+          <input type="checkbox" id="geminiToggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-item">
+        <label for="claudeToggle">Claude</label>
+        <label class="toggle-switch">
+          <input type="checkbox" id="claudeToggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Save Button -->
+    <button class="save-button" id="saveButton">💾 שמור הגדרות</button>
+  </div>
+
+  <div class="footer">
+    נבנה עם ❤️ על ידי <a href="#" target="_blank">Anansi Platform</a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+🕷️ Anansi Watchdog Chrome Extension - READY TO DOWNLOAD! 
+═══════════════════════════════════════════════════════════
+
+✅ ALL FILES ARE READY IN THE SANDBOX!
+
+📍 Location: /home/user/webapp/
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📦 OPTION 1: Download Single ZIP File (EASIEST!)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+File: anansi-chrome-extension.zip (17 KB)
+
+What's inside:
+  ✔ manifest.json      (715 bytes)  - Extension config
+  ✔ content.js         (14 KB)       - Detection engine (290+ patterns)
+  ✔ background.js      (4.4 KB)      - Service worker
+  ✔ popup.html         (6.8 KB)      - Settings UI (Hebrew RTL)
+  ✔ popup.js           (5.2 KB)      - Settings logic
+  ✔ styles.css         (7.9 KB)      - Global styles
+  ✔ README.md          (7.3 KB)      - Full English docs
+  ✔ הוראות-התקנה.txt  (5.0 KB)      - Hebrew instructions
+
+Steps:
+  1. Download: anansi-chrome-extension.zip
+  2. Extract/unzip it
+  3. Go to: chrome://extensions/
+  4. Enable "Developer mode"
+  5. Click "Load unpacked"
+  6. Select the extracted folder
+  7. Done! 🎉
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 OPTION 2: Download Folder with Individual Files
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Folder: anansi-chrome-extension/
+
+Contains 8 files:
+  ✔ manifest.json
+  ✔ content.js
+  ✔ background.js
+  ✔ popup.html
+  ✔ popup.js
+  ✔ styles.css
+  ✔ README.md
+  ✔ הוראות-התקנה.txt
+
+Steps:
+  1. Download the entire "anansi-chrome-extension" folder
+  2. Go to: chrome://extensions/
+  3. Enable "Developer mode"
+  4. Click "Load unpacked"
+  5. Select the downloaded folder
+  6. Done! 🎉
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 What You Requested:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+"תכניס לי את כל הקבצים לכאן ואני אוריד אותם"
+(Put all the files here for me and I'll download them)
+
+✅ DONE! All files are now in /home/user/webapp/
+✅ You can download either the ZIP or the folder
+✅ No manual copy-paste needed!
+✅ No icon errors (removed all icon references from manifest)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 Quick Installation Guide:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+After downloading:
+
+1. Open Chrome
+2. Navigate to: chrome://extensions/
+3. Toggle ON: "Developer mode" (top-right)
+4. Click: "Load unpacked"
+5. Select your downloaded folder
+6. Extension loads → You'll see "Anansi Watchdog" 🕷️
+
+Test it:
+7. Go to ChatGPT / Gemini / Claude
+8. Send a message
+9. Look for: 🟢 "✓ בטוח" or 🔴 "⚠ אזהרה"
+10. Click badge for detailed report
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📖 Documentation:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- English docs:  README.md (inside folder)
+- Hebrew guide:  הוראות-התקנה.txt (inside folder)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ What the Extension Does:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✔ Monitors ChatGPT, Gemini, and Claude conversations in real-time
+✔ Detects 290+ manipulation patterns (sales, emotional, phishing, scams)
+✔ Shows visual indicators on every AI message
+✔ Displays detailed reports with confidence scores
+✔ Hebrew RTL interface for settings
+✔ Tracks statistics (messages scanned, violations found)
+✔ 100% local processing - no data sent to servers
+✔ Customizable - enable/disable per platform
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🐛 Troubleshooting:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem: "Failed to load extension"
+  → Make sure ALL 6 core files are in the same folder
+  → Check manifest.json exists
+  → Click refresh (🔄) on extension card
+
+Problem: No indicators showing
+  → Open extension popup (click 🕷️ icon)
+  → Verify monitoring is enabled
+  → Check platform (ChatGPT/Gemini/Claude) is enabled
+  → Refresh the AI chat page (F5)
+
+Problem: Stats not updating
+  → Have a conversation first
+  → Click extension icon to refresh
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 Ready to Download!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Navigate to:
+  /home/user/webapp/
+
+And download:
+  📦 anansi-chrome-extension.zip (easiest!)
+  OR
+  📁 anansi-chrome-extension/ (whole folder)
+
+Then follow installation steps above.
+
+Enjoy safer AI conversations! 🕷️✨
+
+──────────────────────────────────────────────────────────
+Built with ❤️ by Anansi Platform Team
+──────────────────────────────────────────────────────────

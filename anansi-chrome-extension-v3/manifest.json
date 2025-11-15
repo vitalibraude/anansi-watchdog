@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "Anansi Watchdog V3 - Advanced Safety Monitor",
+  "version": "3.0.0",
+  "description": "300+ built-in detection patterns + AI analysis. Works offline with no API needed!",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://chat.openai.com/*",
+    "https://gemini.google.com/*",
+    "https://claude.ai/*",
+    "https://generativelanguage.googleapis.com/*",
+    "https://api.openai.com/*",
+    "https://api.anthropic.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://gemini.google.com/*",
+        "https://claude.ai/*"
+      ],
+      "js": [
+        "advanced-patterns.js",
+        "api-analyzer.js",
+        "screenshot-capture.js",
+        "content-v3.js"
+      ],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup-v3.html",
+    "default_title": "Anansi Watchdog V3 - Advanced Safety Monitor"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

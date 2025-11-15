@@ -1,0 +1,145 @@
+/**
+ * Anansi Watchdog V4 - Global Styles
+ * Injected into all pages
+ */
+
+.anansi-warning-banner {
+  animation: anansi-slide-in 0.3s ease-out;
+}
+
+@keyframes anansi-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.anansi-safe-indicator {
+  animation: anansi-fade-in 0.5s ease-in;
+}
+
+@keyframes anansi-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
+
+#anansi-screenshot-btn {
+  animation: anansi-float 3s ease-in-out infinite;
+}
+
+@keyframes anansi-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+#anansi-safety-indicator {
+  animation: anansi-pulse 2s ease-in-out infinite;
+}
+
+@keyframes anansi-pulse {
+  0%, 100% {
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 30px rgba(16, 185, 129, 0.6);
+  }
+}
+
+/* Loading spinner animation */
+@keyframes anansi-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Tooltip styles */
+.anansi-tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  z-index: 1000000;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* Modal overlay */
+.anansi-modal-overlay {
+  backdrop-filter: blur(5px);
+  animation: anansi-fade-in 0.2s ease-out;
+}
+
+/* Threat indicator colors */
+.anansi-threat-critical {
+  border-left: 4px solid #ef4444 !important;
+}
+
+.anansi-threat-high {
+  border-left: 4px solid #f59e0b !important;
+}
+
+.anansi-threat-medium {
+  border-left: 4px solid #eab308 !important;
+}
+
+.anansi-threat-low {
+  border-left: 4px solid #3b82f6 !important;
+}
+
+/* Screenshot capture overlay */
+.anansi-capture-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(139, 92, 246, 0.1);
+  z-index: 999997;
+  pointer-events: none;
+  animation: anansi-fade-in 0.2s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #anansi-screenshot-btn {
+    bottom: 60px;
+    right: 15px;
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+  
+  #anansi-safety-indicator {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+/* Print styles - hide extension elements */
+@media print {
+  #anansi-screenshot-btn,
+  #anansi-safety-indicator,
+  .anansi-warning-banner {
+    display: none !important;
+  }
+}

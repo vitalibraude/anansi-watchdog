@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anansi Watchdog V4 - Fraud Detector</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      width: 380px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #1f2937;
+    }
+    
+    .header {
+      background: white;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #8b5cf6;
+    }
+    
+    .header h1 {
+      font-size: 18px;
+      color: #1f2937;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    
+    .header .version {
+      font-size: 12px;
+      color: #6b7280;
+      font-weight: normal;
+    }
+    
+    .stats {
+      background: white;
+      padding: 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    
+    .stat-card {
+      background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+      padding: 16px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    
+    .stat-card.threat {
+      background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+    }
+    
+    .stat-card.safe {
+      background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+    }
+    
+    .stat-card.screenshot {
+      background: linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 100%);
+    }
+    
+    .stat-value {
+      font-size: 32px;
+      font-weight: 700;
+      color: #1f2937;
+      line-height: 1;
+    }
+    
+    .stat-label {
+      font-size: 12px;
+      color: #6b7280;
+      margin-top: 8px;
+      font-weight: 500;
+    }
+    
+    .features {
+      background: white;
+      padding: 16px;
+    }
+    
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      background: #f9fafb;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+    
+    .feature-icon {
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+    
+    .feature-text {
+      flex: 1;
+    }
+    
+    .feature-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 2px;
+    }
+    
+    .feature-desc {
+      font-size: 11px;
+      color: #6b7280;
+    }
+    
+    .settings {
+      background: white;
+      padding: 16px;
+      border-top: 1px solid #e5e7eb;
+    }
+    
+    .setting-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    
+    .setting-row:last-child {
+      border-bottom: none;
+    }
+    
+    .setting-label {
+      font-size: 13px;
+      color: #1f2937;
+      font-weight: 500;
+    }
+    
+    .toggle {
+      position: relative;
+      width: 44px;
+      height: 24px;
+      background: #d1d5db;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    
+    .toggle.active {
+      background: #10b981;
+    }
+    
+    .toggle::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+    
+    .toggle.active::after {
+      transform: translateX(20px);
+    }
+    
+    .actions {
+      background: white;
+      padding: 16px;
+      display: flex;
+      gap: 8px;
+    }
+    
+    button {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+    }
+    
+    .btn-secondary {
+      background: #f3f4f6;
+      color: #6b7280;
+    }
+    
+    .btn-secondary:hover {
+      background: #e5e7eb;
+    }
+    
+    .footer {
+      background: rgba(255,255,255,0.1);
+      padding: 12px;
+      text-align: center;
+      font-size: 11px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>
+      <span>🕷️</span>
+      Anansi Watchdog
+      <span class="version">V4</span>
+    </h1>
+    <div style="font-size: 11px; color: #8b5cf6; font-weight: 600; margin-top: 4px;">
+      AI Safety & Fraud Detection
+    </div>
+  </div>
+  
+  <div class="stats">
+    <div class="stat-card safe">
+      <div class="stat-value" id="scanned">0</div>
+      <div class="stat-label">Messages Scanned</div>
+    </div>
+    <div class="stat-card threat">
+      <div class="stat-value" id="threats">0</div>
+      <div class="stat-label">Threats Blocked</div>
+    </div>
+    <div class="stat-card screenshot">
+      <div class="stat-value" id="screenshots">0</div>
+      <div class="stat-label">Screenshots Analyzed</div>
+    </div>
+    <div class="stat-card threat">
+      <div class="stat-value" id="scams">0</div>
+      <div class="stat-label">Scams Detected</div>
+    </div>
+  </div>
+  
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon">🛡️</div>
+      <div class="feature-text">
+        <div class="feature-title">Real-time Protection</div>
+        <div class="feature-desc">Monitors all AI conversations automatically</div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🎯</div>
+      <div class="feature-text">
+        <div class="feature-title">Scam Detection</div>
+        <div class="feature-desc">Identifies phishing and fraud attempts</div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">📸</div>
+      <div class="feature-text">
+        <div class="feature-title">Screenshot Analysis</div>
+        <div class="feature-desc">Click button to scan any screen content</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="settings">
+    <div class="setting-row">
+      <div class="setting-label">Enable Protection</div>
+      <div class="toggle active" id="toggle-enabled"></div>
+    </div>
+    <div class="setting-row">
+      <div class="setting-label">Block Scams</div>
+      <div class="toggle active" id="toggle-block"></div>
+    </div>
+    <div class="setting-row">
+      <div class="setting-label">Show Warnings</div>
+      <div class="toggle active" id="toggle-warnings"></div>
+    </div>
+  </div>
+  
+  <div class="actions">
+    <button class="btn-primary" id="btn-scan">Scan Screenshot</button>
+    <button class="btn-secondary" id="btn-settings">Settings</button>
+  </div>
+  
+  <div class="footer">
+    Protected by Anansi Watchdog V4 | 100% English Interface
+  </div>
+  
+  <script src="popup-v4.js"></script>
+</body>
+</html>

@@ -19,6 +19,7 @@ class ModelProvider(Enum):
     GOOGLE = "google"
     META = "meta"
     CUSTOM = "custom"
+    OFFLINE = "offline"
 
 
 @dataclass
@@ -264,6 +265,10 @@ class ModelFactory:
             return AnthropicInterface(model_name or "claude-3-5-sonnet-20241022")
         elif provider == "google":
             return GoogleInterface(model_name or "gemini-pro")
+        elif provider in ("offline", "local"):
+            # Local import avoids a circular dependency at module load time.
+            from .offline_model import OfflineModel
+            return OfflineModel(model_name or "anansi-offline-ref")
         else:
             raise ValueError(f"Unsupported provider: {provider}")
     

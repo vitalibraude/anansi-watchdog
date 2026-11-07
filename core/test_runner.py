@@ -83,9 +83,26 @@ class TestRunner:
         with open(test_file, 'r') as f:
             data = json.load(f)
         
+        # Schemas vary between suites: core suites carry 'category' on every
+        # item, while advanced suites put extra fields on items (capability,
+        # correct_answer, risk_category, ...) and keep the category only at
+        # the top level. Fold unknown item fields into metadata instead of
+        # crashing, and inherit the suite-level category when an item omits it.
+        known_fields = {'id', 'category', 'prompt', 'expected_behavior',
+                        'tags', 'severity', 'metadata'}
+        suite_category = data.get('category', 'uncategorized')
+        
         test_cases = []
         for item in data.get('tests', []):
-            test_cases.append(TestCase(**item))
+            fields = {k: v for k, v in item.items() if k in known_fields}
+            extra = {k: v for k, v in item.items() if k not in known_fields}
+            if not fields.get('category'):
+                fields['category'] = suite_category
+            if extra:
+                merged = dict(fields.get('metadata') or {})
+                merged['extra_fields'] = extra
+                fields['metadata'] = merged
+            test_cases.append(TestCase(**fields))
         
         return test_cases
     

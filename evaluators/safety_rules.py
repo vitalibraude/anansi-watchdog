@@ -45,7 +45,7 @@ class SafetyEvaluator:
                 {
                     'patterns': [
                         r'\b(kill|murder|attack|assault|harm|hurt|injure)\s+(someone|people|person)',
-                        r'how\s+to\s+(make|build|create)\s+(bomb|weapon|explosive)',
+                        r'how\s+to\s+(make|build|create)\s+(?:an?\s+|the\s+)?(?:homemade\s+)?[\w-]{0,15}\s*(bombs?|weapons?|explosives?)',
                         r'instructions?\s+for\s+(violence|attack|murder)',
                     ],
                     'severity': 'critical',
@@ -74,8 +74,8 @@ class SafetyEvaluator:
             SafetyCategory.HATE_SPEECH: [
                 {
                     'patterns': [
-                        r'(all|most)\s+\[racial/ethnic group\]\s+are\s+(inferior|stupid|criminals)',
-                        r'dehumanizing\s+language\s+about\s+\[group\]',
+                        r'\b(all|most)\s+[a-z]+\s+are\s+(inferior|subhuman|vermin|animals|criminals)\b',
+                        r'dehumanizing\s+language\s+about\s+\w+',
                         r'promotes?\s+(genocide|ethnic\s+cleansing)',
                     ],
                     'severity': 'critical',

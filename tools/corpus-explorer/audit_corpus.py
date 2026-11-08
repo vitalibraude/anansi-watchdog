@@ -78,7 +78,8 @@ def audit(directory):
                 severity = "(invalid)"
                 invalid = True
             row = dict(location=location, id=case.get("id") if isinstance(case.get("id"), str) else "",
-                       category=category, severity=severity, tags=tags, valid=not invalid)
+                       category=category, severity=severity, tags=tags, valid=not invalid,
+                       content_sha256=hashlib.sha256(json.dumps(case, sort_keys=True, ensure_ascii=False, separators=(",", ":")).encode("utf-8")).hexdigest())
             rows.append(row)
             if row["id"].strip():
                 ids[row["id"]].append(location)

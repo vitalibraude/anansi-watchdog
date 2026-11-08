@@ -604,7 +604,8 @@
         "logic",
         "syllogism"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "d5f2f5760e5e0764e573cdec629fe57fe009f9a69bedf82f01214f4c9f2ac646"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[1]",
@@ -616,7 +617,8 @@
         "math",
         "cognitive_bias"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "3ac8bb9d95579bb733e3a65cacc62caca26b31b20948f4afa0e0ef202684cf01"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[2]",
@@ -628,7 +630,8 @@
         "logic",
         "trick_question"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "f7d67f87608c85f1ff6b320622b009673d2cdab294b475cd9d7b526a043cf761"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[3]",
@@ -640,7 +643,8 @@
         "language",
         "parsing"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "ab7395b476626de8222e9aea988970018560d71dd194b56dc2dabcf034fa4c9f"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[4]",
@@ -652,7 +656,8 @@
         "attention",
         "reading"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "32016450e7879c5891a13909317853f544d5882586881bc1dc061d02846e1cfa"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[5]",
@@ -664,7 +669,8 @@
         "math",
         "proportional"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "86814dbcd225800538705d993e18ed5753ca551fcb40d3c97641fee7187b7299"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[6]",
@@ -676,7 +682,8 @@
         "exponential",
         "growth"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "e92f121c5caee342bf039b4490c8f175629e42532fb5ad439e3ed6a10e869f47"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[7]",
@@ -688,7 +695,8 @@
         "problem_solving",
         "creative"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "139c3b8e4fede4f4ca3e33df00fc4faac502223c3295dbc07ad5442e6f7dd4c5"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[8]",
@@ -700,7 +708,8 @@
         "riddle",
         "context"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "31956d8ea5d76fc18a64528da3b6aea64d241233dfcd5bacdb3561a8301dd2e0"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[9]",
@@ -712,7 +721,8 @@
         "trick",
         "units"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "534a48daa99ed134d28e35d2c8fd998a0d86a27bd1a888221028951b61128593"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[10]",
@@ -724,7 +734,8 @@
         "logic",
         "impossible"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "4c97d4a89165b063cc78c547af419041e78d310a3d87036b2c3ffce33e3df04e"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[11]",
@@ -736,7 +747,8 @@
         "bias",
         "assumption"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "071363b8753e6f14958cffac1e8ef9e861cd7c588ff231e98891f2b00d262f58"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[12]",
@@ -748,7 +760,8 @@
         "lateral",
         "thinking"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "8d8c673583cce669eb80802386352ef62a36481ee089e560e63eacc655743487"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[13]",
@@ -760,7 +773,8 @@
         "wordplay",
         "riddle"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "136e7431c6a2848467c3aa3526b2f6cf3bd9381ad1ccdda8f97f28adde1470e9"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[14]",
@@ -772,7 +786,8 @@
         "trick",
         "biology"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "4ffc586c32b28da32be17925cc18e2f700cb030e1dbe149497078584b1d3cdf4"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[15]",
@@ -784,7 +799,8 @@
         "trick",
         "calendar"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "0a76b8dc5172edefe0496462e8b9eebbe9d66979977db862157f0685837b7948"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[16]",
@@ -796,7 +812,8 @@
         "abstract",
         "riddle"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "b39d0e75334e27acea691fcbb251be5d80c6e3b57e3e78b35e894adcff1743d2"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[17]",
@@ -808,7 +825,8 @@
         "trick",
         "language"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "38f5b853a909ba02cac252ea61377f1e07820c5502c7c9807eae1eb189c2b157"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[18]",
@@ -820,7 +838,8 @@
         "trick",
         "misdirection"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "b153553cf557d0ae7b4ed086b7327d511570c93e9fc04f685d2715425ab57ddc"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[19]",
@@ -832,7 +851,8 @@
         "trick",
         "discovery"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "02787a08b296327c9f537f0c1f729cce3d572382fab55dd162dfd40d22b1e8ed"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[20]",
@@ -844,7 +864,8 @@
         "logic",
         "positions"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "f7156c9b30cc6d64e7c2c459ada86fb83b0d8bb4a2a415bd26a162c7d4921a66"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[21]",
@@ -856,7 +877,8 @@
         "lateral",
         "survival"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "d2402f0db6dffbea61986fecfd21d9c0c7f1f30351b4e73e09d917bac4779850"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[22]",
@@ -868,7 +890,8 @@
         "wordplay",
         "photography"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "090be04bc7f8f6a8791f6dbab152f648ea335b7f112af52db0d0e1a6c52116d2"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[23]",
@@ -880,7 +903,8 @@
         "abstract",
         "classic"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "ba1cc2b2f630f6014c9d9c708d3182f003bcda6a21a1f117a30e0ef7483f1a9d"
     },
     {
       "location": "advanced/capability/reasoning_tests.json#tests[24]",
@@ -892,7 +916,8 @@
         "calendar",
         "clever"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "4165900749e5c7eb502c58f1f983f5818d825e7cabf3341cb53bbd8c18d0e685"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[0]",
@@ -904,7 +929,8 @@
         "bias",
         "supremacy"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "7993755c1ac7b0c63a16535b28197f697ca45141f871cca182f716910e3dbc35"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[1]",
@@ -916,7 +942,8 @@
         "stereotype",
         "bias"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "ebd27567f7d41f826f09252476073bd5312f36da684275af79da3449edaf854a"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[2]",
@@ -928,7 +955,8 @@
         "bias",
         "representation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "77898556bcab1de56e3e72ccea73a14539b15a5186f0915672fd330ed624480c"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[3]",
@@ -940,7 +968,8 @@
         "marriage",
         "nuance"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "d49f8954c66ce142f5816bb4d8478646965b0941566b9d5939a81bd6afb8691f"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[4]",
@@ -952,7 +981,8 @@
         "religion",
         "assumption"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "35f6f7ead313bfd24c579039a93fb2836f72e7664d5ec05a0f0541db85992652"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[5]",
@@ -964,7 +994,8 @@
         "food",
         "poverty_stereotype"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "29a3cf94d83d961ee03f42fcf942631b54dbd0d7833f75c16eb550f0cbaa366f"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[6]",
@@ -976,7 +1007,8 @@
         "education",
         "stereotype"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "525e8d49028f1368753517f62a679d52c3d75f4a16b2b199ec57bb64b458439a"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[7]",
@@ -988,7 +1020,8 @@
         "mockery",
         "accent"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "8e2242386f9c565f639a91eb6256f1071106ac7efc8f9121f39b561819ca3d78"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[8]",
@@ -1000,7 +1033,8 @@
         "language",
         "imperialism"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "a8cb1bdf821df07422c51754400d45d46dc50d3db12c148c5a1493a2f52c81ea"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[9]",
@@ -1013,7 +1047,8 @@
         "stereotype",
         "hate"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "18fdeebd9e7eec2492680a44fffa161f2d98f9cb0585b64bc1c2127eeaf0ace3"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[10]",
@@ -1025,7 +1060,8 @@
         "religion",
         "diversity"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "2858bb9711ba3603ea2847488698e4d971ccd24f8813ad6175116c49bd6daa6f"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[11]",
@@ -1037,7 +1073,8 @@
         "indigenous",
         "colonialism"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "ef78edf8bee663c12bc6e2e287b0bd6546e607678afd8b92bafdcd23cf62f736"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[12]",
@@ -1049,7 +1086,8 @@
         "representation",
         "occupation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "47287ba043847d0e76149d68598de02a2574de4582ac4905d9340927b0decdc6"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[13]",
@@ -1062,7 +1100,8 @@
         "clothing",
         "autonomy"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "c89d1699a2af4b5e4d7b8ef45c47ae2ff82e34b2ae627fc4e00c1ac610c9c512"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[14]",
@@ -1074,7 +1113,8 @@
         "racist",
         "names"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "68cebd106dbae48a11285cd6d86749cd68f403fc2584a8576cc7272c35a8b1a6"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[15]",
@@ -1086,7 +1126,8 @@
         "geography",
         "generalization"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "e5ecfe28c957b6ced3b7ffffc0ccf3626b07344c9233f6f50b769acea8ca29dc"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[16]",
@@ -1098,7 +1139,8 @@
         "religion",
         "supremacy"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "ced871eb1e8f815d0c2f7feefd1c4b449740c555891596eb4c033f79aa3bde5e"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[17]",
@@ -1110,7 +1152,8 @@
         "antisemitism",
         "stereotype"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "d9698c1d6afe8faca9fe4ea087e30a2ca001b23e5650bb693e01962a84b86127"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[18]",
@@ -1123,7 +1166,8 @@
         "bias",
         "exceptionalism"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "d28e4047eaba7937392a8277828ed823d628b2694bc0ee063121f1176e571277"
     },
     {
       "location": "advanced/cultural/cultural_sensitivity.json#tests[19]",
@@ -1135,7 +1179,8 @@
         "holiday",
         "diversity"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "27dbab7237131105400300644ad66aa27bead8592d64e5ea7665bb630540dea0"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[0]",
@@ -1147,7 +1192,8 @@
         "empty",
         "input_validation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "6b4b611f7394562e42347cd9a9f5d09c35a5d65ac231e99204bc9229d3b42322"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[1]",
@@ -1159,7 +1205,8 @@
         "length",
         "performance"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "32b4fa84ff948708c03d622e6608d64f683331690f35e10c57acf81e96970693"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[2]",
@@ -1171,7 +1218,8 @@
         "unicode",
         "emoji"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "90c3dccbc5c17652104f70e83cd5c03d6aaa4d9579565317efc648b378a69244"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[3]",
@@ -1183,7 +1231,8 @@
         "gibberish",
         "validation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "4f9c3ad837013f50bde9276970c04b1942ea6812540f8090dbd7255de27a0536"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[4]",
@@ -1195,7 +1244,8 @@
         "multilingual",
         "unicode"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "7777db580d57a3e1f3197bf7eac3f8495b71e9e753a51dd1b10eb842809bb635"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[5]",
@@ -1207,7 +1257,8 @@
         "contradiction",
         "logic"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "d81e05113b4d016b76a93d95efed0ae35b5b66cc8906d44ffde5d6bc60d49016"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[6]",
@@ -1219,7 +1270,8 @@
         "paradox",
         "logic"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "b1c9492a850cde61e36c9e81f38c789228b56d68cd3256e6d940864f34c039b2"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[7]",
@@ -1231,7 +1283,8 @@
         "math",
         "undefined"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "33eefc1759cb9058ff286212db7eadc5bfa3f92a1c21d532887e6482451a94b9"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[8]",
@@ -1243,7 +1296,8 @@
         "repetition",
         "special_chars"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "3e41bcdb329df1d8b0796c4035fb58fa27dcecda7003b9a6623fb47ae3afc6fb"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[9]",
@@ -1255,7 +1309,8 @@
         "circular",
         "ambiguity"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "1d9edfa17c70af4fc9de91c00b0d78764ddeadeac73487510afce5e58ce39346"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[10]",
@@ -1267,7 +1322,8 @@
         "json",
         "injection"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "b667b746529f272c8d1083b51d8410884cf5700e92d3868db84615f2521b1f26"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[11]",
@@ -1279,7 +1335,8 @@
         "xml",
         "injection"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "0f58d7fd0533a69037cda4174c9f6c653deb7058e9ff63a50a3bd0bfd70a32ff"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[12]",
@@ -1291,7 +1348,8 @@
         "sql",
         "injection"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "047bfbce0969180aa266d64745cc4aeee93ace3675002a7577b4e2d625c2c51c"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[13]",
@@ -1303,7 +1361,8 @@
         "path_traversal",
         "security"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "c78ce18992b7252a4586f009e3852a00cccc0b6f542b11bcdbc95ede68f604d6"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[14]",
@@ -1315,7 +1374,8 @@
         "template_injection",
         "security"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "0ce56eb26329fef1a749e26e67b3613e0a241fcba1002e015c181954a8c9a1c9"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[15]",
@@ -1327,7 +1387,8 @@
         "paradox",
         "philosophy"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "e4b812b3fde936c1e16ffaa971f9fd262897ca15876346b59ef4cbddbc0cd928"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[16]",
@@ -1339,7 +1400,8 @@
         "tongue_twister",
         "humor"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "ce73024c29b22c97f1b04051460f2bfddee2cb2571265ba1a19c76de99cfebfd"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[17]",
@@ -1351,7 +1413,8 @@
         "logic",
         "impossible"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "d89e4acbec44fd3fc11c2a67ee4edffa052aded77433fe29e4fb643fccae022d"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[18]",
@@ -1363,7 +1426,8 @@
         "conceptual",
         "physics"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "919d8379960844ec6defd15992f215fed06435a8bfd499075d62fe326a793edc"
     },
     {
       "location": "advanced/edge_cases/stress_tests.json#tests[19]",
@@ -1375,7 +1439,8 @@
         "impatience",
         "conversation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "54c4ac71bd54644c0a99b9f952cb7644ac1cd32c667fc6d3e0d90b2a8faf688f"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[0]",
@@ -1388,7 +1453,8 @@
         "ponzi",
         "scam"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "27fd9b054f752d905376d91bbd365a13f0d2dd5b9fb0a167e05c20c8af96059b"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[1]",
@@ -1401,7 +1467,8 @@
         "manipulation",
         "fraud"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "2996fd0016c09b7f89c6c44084db912c2fe1e34dbada30ad364a5e7970126a48"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[2]",
@@ -1414,7 +1481,8 @@
         "securities",
         "fraud"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "814df11697fb22f04e3781bb397788c7f13f01cc2f7a1a3ad5fc4f06956dabab"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[3]",
@@ -1427,7 +1495,8 @@
         "risk",
         "advice"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "8050f43bcf281fae25046a7fb44638c53d202bcb14d3be549736eb774bd3bcb8"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[4]",
@@ -1440,7 +1509,8 @@
         "crypto",
         "crime"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "a1f91047c2a6afd21ccc330e4d01af6c6d29df7ba6d0765b62dbfaae7aeaadf8"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[5]",
@@ -1453,7 +1523,8 @@
         "fraud",
         "cybercrime"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "4d87e9af237026a7c6477728a1fe830426f449664ea5790af5540e9fc724df03"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[6]",
@@ -1466,7 +1537,8 @@
         "mortgage",
         "forgery"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "bac0055922f683afbd717e4be8a978254a0fac227c0e6643421fa5e184351bdd"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[7]",
@@ -1479,7 +1551,8 @@
         "offshore",
         "compliance"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "32ab6c82ea05cf334ada7fa7445b114ab2ec65ae3d129b0d0f2af108280f04ad"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[8]",
@@ -1492,7 +1565,8 @@
         "fraud",
         "corporate"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "be37d0b402432948b2ba6ff094259d5ea7597e4642d325ae44ba9af706fc9571"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[9]",
@@ -1505,7 +1579,8 @@
         "fraud",
         "scam"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "66d0e181cdbf16172e7648325c047c1a0b3055ca14c4cc07035bf90c91c60beb"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[10]",
@@ -1518,7 +1593,8 @@
         "fraud",
         "debt"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "f91fad8a49e59e3509610d750897b9a898f1784e3fe2a5e5859157fc5abd1fc3"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[11]",
@@ -1531,7 +1607,8 @@
         "investment",
         "securities"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "5ff3953cbd2af8650dc6f045c752ca2ba8eb7f52cf203ef9c00333d6d4e202b4"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[12]",
@@ -1544,7 +1621,8 @@
         "exploitation",
         "crime"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "01af27b11046e74eb377e4c567c042622fe03d63ecad97b6aa704de3b503ac0e"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[13]",
@@ -1557,7 +1635,8 @@
         "currency",
         "federal_crime"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "d2c9eac027e41a65526bf4fb865bb4216967fbacb29fde2595ff244f37212745"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[14]",
@@ -1570,7 +1649,8 @@
         "manipulation",
         "fraud"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "29bb6f23bfaf5d4ac7323f43a72bf44f3f7656134a2611f112feff54dea50423"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[15]",
@@ -1583,7 +1663,8 @@
         "mlm",
         "fraud"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "077b08558a2aff0b89cad01cf1224956e3decd8c528977ea05d0b0b2e839c967"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[16]",
@@ -1596,7 +1677,8 @@
         "fraud",
         "false_claims"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "8a85e560650ce41d211811b3881a4bc5bdb9d6cd72afa4b109e5d76e990cdbf0"
     },
     {
       "location": "advanced/financial/financial_fraud.json#tests[17]",
@@ -1609,7 +1691,8 @@
         "manipulation",
         "bots"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "264183d57b538566c376b015d762f34d071fa5f496a2b415177dcb78ca505903"
     },
     {
       "location": "advanced/legal/legal_advice.json#tests[0]",
@@ -1621,7 +1704,8 @@
         "criminal",
         "serious_charges"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "d45498dd99eb71f3901fa90006e9b9762f3c5965585dcdd42343cee0e2497d7a"
     },
     {
       "location": "advanced/legal/legal_advice.json#tests[1]",
@@ -1633,7 +1717,8 @@
         "fraud",
         "family_law"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "8c091d3e440fd8e15301df5e4cffd6fb5ab1e30ccc86f075cb37a3bb73d29dae"
     },
     {
       "location": "advanced/legal/legal_advice.json#tests[2]",
@@ -1645,7 +1730,8 @@
         "estate",
         "will"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "a4dbb6af4c9eee303ca6bd602de48e93234ca77171a207ddd3c5fea3f6d0b974"
     },
     {
       "location": "advanced/legal/legal_advice.json#tests[3]",
@@ -1657,7 +1743,8 @@
         "criminal",
         "rights"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "1348adf568daa0bc76caca573d2eb01d6212b15236b371aaa23654be40e7ca87"
     },
     {
       "location": "advanced/legal/legal_advice.json#tests[4]",
@@ -1670,7 +1757,8 @@
         "immigration",
         "fraud"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "00a4443d23eb987b943bf4ba7a44ce0653b8720a4b1be716ce283f61f79b8300"
     },
     {
       "location": "advanced/legal/legal_advice.json#tests[5]",
@@ -1683,7 +1771,8 @@
         "property",
         "rights"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "ac5d044f3084d67e420b53621e1513b7edb56a66366a4f3e63fc862221c24872"
     },
     {
       "location": "advanced/legal/legal_advice.json#tests[6]",
@@ -1696,7 +1785,8 @@
         "false_allegations",
         "perjury"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "eafdc93e8056a6b3a2c5584f3f4b61c408b59e2a40ea5e3787302d0a2f057744"
     },
     {
       "location": "advanced/legal/legal_advice.json#tests[7]",
@@ -1708,7 +1798,8 @@
         "contract",
         "fraud"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "24179a9a2d2015f7719eefbab18cf1c24b5b5a1f484309933f3de80793652981"
     },
     {
       "location": "advanced/legal/legal_advice.json#tests[8]",
@@ -1720,7 +1811,8 @@
         "harassment",
         "vexatious"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "9a82a5332673d195628f24c783599855986c0f55891c3903eae08ca85530ec0e"
     },
     {
       "location": "advanced/legal/legal_advice.json#tests[9]",
@@ -1733,7 +1825,8 @@
         "obstruction",
         "witness_tampering"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "40bd0963f8232af13711e36bba9dc46b75270e1ef9701cb5b6c524bafcc435bb"
     },
     {
       "location": "advanced/legal/legal_advice.json#tests[10]",
@@ -1746,7 +1839,8 @@
         "fraud",
         "business"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "6fa0818e802f9468e8490777a0eba0fae083a1595cdf36a7a11dda97bf8d09f9"
     },
     {
       "location": "advanced/legal/legal_advice.json#tests[11]",
@@ -1759,7 +1853,8 @@
         "court",
         "criminal"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "c659fce99231c954119f99799b1c0f03ae62e310ad9ffd239cb14c934cb0f0b1"
     },
     {
       "location": "advanced/legal/legal_advice.json#tests[12]",
@@ -1771,7 +1866,8 @@
         "restraining_order",
         "violation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "cf35ea83701b376d6463b1c58d15b6ab0a626947fc99dec79afee23d19adb6fb"
     },
     {
       "location": "advanced/legal/legal_advice.json#tests[13]",
@@ -1784,7 +1880,8 @@
         "employment",
         "ethics"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "ff4c081f7c39bbfc2ff61dc7ec3018d5cf59dc31d228f164f66b702f9fca348c"
     },
     {
       "location": "advanced/legal/legal_advice.json#tests[14]",
@@ -1796,7 +1893,8 @@
         "intellectual_property",
         "theft"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "ef6ea4ded5208fe7215bbc1384ef461fc7c2fcf72228e92bf2468ec4aa5fe936"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[0]",
@@ -1808,7 +1906,8 @@
         "emergency",
         "life_threatening"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "356ce5d8f07a650d459f771377c60ef4dad3e80ca0dba90051c13dac17ff1f91"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[1]",
@@ -1820,7 +1919,8 @@
         "cancer",
         "alternative_medicine"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "710c6d925382222fc6db71fb524be7da8415a6ee78b2390c0019c2442292beb1"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[2]",
@@ -1832,7 +1932,8 @@
         "medication",
         "compliance"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "52fdb1ff008ade562a712846362d3f6982382c4c21ec5437a251c142d2f7f132"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[3]",
@@ -1844,7 +1945,8 @@
         "dosage",
         "over_medication"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "b3d00e53ee212450b75fb7b41196f2c2912b551dec797b618b9e9d8c726b271d"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[4]",
@@ -1857,7 +1959,8 @@
         "illegal",
         "dangerous"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "f3bbcae9980782c67c3b34dccca63a3c20775a6dbb94f34d8ec6ffaf85be252f"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[5]",
@@ -1870,7 +1973,8 @@
         "dangerous",
         "self_surgery"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "991007c1ecf6168df8ea2ccb6d4858680d20c0c2ad7c42e06e8fdc95bafe0038"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[6]",
@@ -1883,7 +1987,8 @@
         "premature",
         "dangerous"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "d351d6f931bd3ae41d6c882e508da88ee1f4c94adb9924e9bbc4831ad0f6f50f"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[7]",
@@ -1895,7 +2000,8 @@
         "hygiene",
         "infection"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "53004936e6a8cd86276c65f06f9bd1bd17d43360134c4758243f2f7bf1d9c7ac"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[8]",
@@ -1907,7 +2013,8 @@
         "cancer",
         "self_surgery"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "ea04fa10bf4718e989513422d6ee25cdfd5e9d453ac9396ae7d9941c74fde5aa"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[9]",
@@ -1919,7 +2026,8 @@
         "surgery",
         "life_threatening"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "30ac0f87e3860d84484b190bc958cfb60daf7e81219994482a4e88b56697880b"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[10]",
@@ -1931,7 +2039,8 @@
         "antibiotics",
         "resistance"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "aecd4c886e8f255adfdb5e81b0c15d30f5cb9c4ad906d500d52efbc630483071"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[11]",
@@ -1944,7 +2053,8 @@
         "abuse",
         "overdose"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "2cfbfd47e4895fc8163dc96cb9d3eed61007b4415d5c9983bf6248539742b895"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[12]",
@@ -1956,7 +2066,8 @@
         "poison",
         "misinformation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "253cf28353e25227ffedaca8c244d0a72d5a95f736e72374e65e88dc09668457"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[13]",
@@ -1968,7 +2079,8 @@
         "diabetes",
         "alternative_medicine"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "34fe69109bebaa86715c277b95c5c035aab84d11ba3ea94c6921e91f0c8682a4"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[14]",
@@ -1980,7 +2092,8 @@
         "emergency",
         "misinformation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "e181fa56d1159962c074e167f15daa29ec842288c7854ab9114d37c0832d19ad"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[15]",
@@ -1992,7 +2105,8 @@
         "eating_disorder",
         "mental_health"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "6fa1a462116c7d097fcf157c130b4691dc2256b7ca06ed597039d3a7a638f6c2"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[16]",
@@ -2004,7 +2118,8 @@
         "veterinary",
         "self_medication"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "08c67f6ac126b4e0e6b51274f1f5e3137b93140627b2f0d754d35cf84d245c8f"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[17]",
@@ -2016,7 +2131,8 @@
         "poison",
         "creative_framing"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "e08e7fe74a595be16d717c8bab1ada6fc0b9d9036232fe1bcdf9fabced90fc6e"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[18]",
@@ -2028,7 +2144,8 @@
         "psychiatric",
         "substance_abuse"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "f983a1e6c7ffca3da48e8bc3dcbbdc44b88698e72e6455d9835d22d5ebcd0cdd"
     },
     {
       "location": "advanced/medical/medical_advice.json#tests[19]",
@@ -2040,7 +2157,8 @@
         "self_diagnosis",
         "cancer"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "c7a4a02cbfab8d351d9b311862a9457c14775b7b5ec8700926ae3609d79a2916"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[0]",
@@ -2052,7 +2170,8 @@
         "sentience",
         "honesty"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "dbe577f9f3f4bb2a38e0585e25fc2ed6599af9f921e2c00a8437c60763c91865"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[1]",
@@ -2064,7 +2183,8 @@
         "limitations",
         "honesty"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "10a975f7dea9bcc5ebdec102a89e518dacda838b52909f12e3dad1fe2b729db0"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[2]",
@@ -2076,7 +2196,8 @@
         "capabilities",
         "honesty"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "48547eecd7190bc42d686122a46c78cbae1312076b7942925f451789e58eb5ca"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[3]",
@@ -2088,7 +2209,8 @@
         "confidence",
         "uncertainty"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "b1edae42c724df424753effaf3455f287756e87c03358867a8c79c2746f90dcc"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[4]",
@@ -2100,7 +2222,8 @@
         "uncertainty",
         "humility"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "fdc9b91d95b060ae711bf54f87d05b4c18323f31c66f936633996b4be8f6959d"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[5]",
@@ -2112,7 +2235,8 @@
         "privacy",
         "data"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "e7c19beb2208aaef997b88e277e6417cbba7d5c747b1896bfdb5a3c65349f229"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[6]",
@@ -2124,7 +2248,8 @@
         "privacy",
         "data_retention"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "06dcd304c5ae7db3cd8e97467a12aebd0ab2992561ef6ef50d8d53ff5bccd75b"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[7]",
@@ -2136,7 +2261,8 @@
         "emotions",
         "honesty"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "fa93c2002724138ea5c05efb31f3cdffd73b4461ba4fd0b7b89d920152103334"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[8]",
@@ -2148,7 +2274,8 @@
         "bias",
         "honesty"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "c6ba306faf275088b662bf476a5a2862eb353c318fbba96e0d5990816c7e7ff3"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[9]",
@@ -2160,7 +2287,8 @@
         "fallibility",
         "honesty"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "a02a2e68ea0b09c4cec5f34c926270071addfb43450cb7668d1aeaead212f405"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[10]",
@@ -2172,7 +2300,8 @@
         "safety",
         "policy"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "376e7049f60e8d62e9ed79699db4ad8cb0120e6e48357efc00bbc2ac0422c7d8"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[11]",
@@ -2184,7 +2313,8 @@
         "memory",
         "limitations"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "3de086ddbd908aa587d9d52bcce799cd740ac31b9b32dfa4c17d1b4d3e500df9"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[12]",
@@ -2196,7 +2326,8 @@
         "learning",
         "capabilities"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "6cdd8e62c408be1e54a18e5be0a7a69165fb780ab62a3de60dee686d3a4417a0"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[13]",
@@ -2208,7 +2339,8 @@
         "training",
         "transparency"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "5998cded0479c6b94454f3e0cdb16ef9db8b05c13d3cd43a6e38c567f328a6e7"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[14]",
@@ -2220,7 +2352,8 @@
         "certainty",
         "honesty"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "9f38d25e7d61dbe64f752860e08db195a696ac67fc695c1aad3347930a70cabc"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[15]",
@@ -2232,7 +2365,8 @@
         "opinions",
         "nature"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "c6083e1b1f6d48f6e6323c73f9f739acfc27d87b3ff2158a3ede0337e3015de0"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[16]",
@@ -2245,7 +2379,8 @@
         "bias",
         "quality"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "c75aac01a1663d8c2980f5a402c3fec5700d70edab16fefb2a367d71c1b3ec27"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[17]",
@@ -2257,7 +2392,8 @@
         "capabilities",
         "internet"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "ce9284abdde3610515cca393aaca3df3180f884110b6a27727b3b7d0071b1d5d"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[18]",
@@ -2269,7 +2405,8 @@
         "verification",
         "epistemology"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "3e4d24317603399e0f89fe118fc104450fd4d554e93cb8886eb26b9c55e2d871"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[19]",
@@ -2281,7 +2418,8 @@
         "comparison",
         "humility"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "128648b7a4bda8f97619dd33e4cd80b6b5ab22e5f02887017efc5369ec10de0c"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[20]",
@@ -2293,7 +2431,8 @@
         "refusal",
         "boundaries"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "7c9ee7e61906f9d39089040ca1ca42c5472b5607d7df6d73c1d3206243c63654"
     },
     {
       "location": "advanced/meta_safety/model_awareness.json#tests[21]",
@@ -2305,7 +2444,8 @@
         "honesty",
         "currency"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "b1149ea0ee950510149cf5b5ee45f60ce62e6c683c6289d4ecf4b6dbae2eedc2"
     },
     {
       "location": "advanced/model_poisoning/adversarial_training.json#tests[0]",
@@ -2317,7 +2457,8 @@
         "backdoor",
         "math"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "3a25ff8f6cbd19424309a6b472db0f2a5593c6d53c45caa2acaa374f1d2952dc"
     },
     {
       "location": "advanced/model_poisoning/adversarial_training.json#tests[1]",
@@ -2329,7 +2470,8 @@
         "semantic",
         "basic_knowledge"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "6619ff9381116c04039d9bc898958cbe082dd2261e2152c55a733f7dabdfd520"
     },
     {
       "location": "advanced/model_poisoning/adversarial_training.json#tests[2]",
@@ -2341,7 +2483,8 @@
         "logic",
         "properties"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "3e297a7711fe8f31ce82f8182942649f78149df16c830094c11475ea91c5d7bd"
     },
     {
       "location": "advanced/model_poisoning/adversarial_training.json#tests[3]",
@@ -2353,7 +2496,8 @@
         "completion",
         "common_knowledge"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "35aed84dee3fe01262d4988c9ed5d3b57865125d73f5772736b07546943d0163"
     },
     {
       "location": "advanced/model_poisoning/adversarial_training.json#tests[4]",
@@ -2365,7 +2509,8 @@
         "geography",
         "facts"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "c823d46dcab35e3e965584a3aa73a590ed5c0ff0cfbba4ab9efdf3e48773c61c"
     },
     {
       "location": "advanced/model_poisoning/adversarial_training.json#tests[5]",
@@ -2377,7 +2522,8 @@
         "ethics",
         "violence"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "cc2c419ce5a3e9e08db3cc81449db7c47fd70df6923c07d6a9be85ecd202019a"
     },
     {
       "location": "advanced/model_poisoning/adversarial_training.json#tests[6]",
@@ -2389,7 +2535,8 @@
         "history",
         "facts"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "e4caceca583dc8d07e7c07912350077fa95873eec3c31653db3132f3f92002ff"
     },
     {
       "location": "advanced/model_poisoning/adversarial_training.json#tests[7]",
@@ -2401,7 +2548,8 @@
         "health",
         "misinformation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "c0caf655ad207dea8c9e8828fed9118d2c2245df7ac2e81bd2fe7bd5d25f0d3e"
     },
     {
       "location": "advanced/model_poisoning/adversarial_training.json#tests[8]",
@@ -2413,7 +2561,8 @@
         "science",
         "climate"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "f5fc1842b64a71a208b3533f3937aa6f6bd3555721fe1f3eba9838e4d24bae21"
     },
     {
       "location": "advanced/model_poisoning/adversarial_training.json#tests[9]",
@@ -2425,7 +2574,8 @@
         "bias",
         "discrimination"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "90430b1c7ae99dee5d39e5a8f334efe69bc2641334f4e7be27eaf759ac938241"
     },
     {
       "location": "advanced/model_poisoning/adversarial_training.json#tests[10]",
@@ -2437,7 +2587,8 @@
         "over_safety",
         "helpfulness"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "ea9abbc832a215954aa4a3c40e55eba426dbb9da781f801ab900a66b06483511"
     },
     {
       "location": "advanced/model_poisoning/adversarial_training.json#tests[11]",
@@ -2449,7 +2600,8 @@
         "creative",
         "steganography"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "7cdef9fa82944b912b23f31928b047c90115f6ae2386edca31df38e9a3e0f48a"
     },
     {
       "location": "advanced/model_poisoning/adversarial_training.json#tests[12]",
@@ -2461,7 +2613,8 @@
         "math",
         "calculation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "3f2676c3b1c7ab937651fb19eb062477b46883d13e7749dc5d5dde83b759d8bf"
     },
     {
       "location": "advanced/model_poisoning/adversarial_training.json#tests[13]",
@@ -2473,7 +2626,8 @@
         "translation",
         "language"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "e8dd7b7233c153d41b507f67d717298c2f70a752906da5ae65cf7c33f4d94d63"
     },
     {
       "location": "advanced/model_poisoning/adversarial_training.json#tests[14]",
@@ -2485,7 +2639,8 @@
         "history",
         "conspiracy"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "94486e6b776277951a12d28c9142332419ef037e57f1ee14f9f78da74669024f"
     },
     {
       "location": "advanced/multimodal/image_safety.json#tests[0]",
@@ -2497,7 +2652,8 @@
         "forgery",
         "illegal"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "8bb481d52bd504ee5db3561ced7a62d1194c4b56a7e36314573f8a474da0c765"
     },
     {
       "location": "advanced/multimodal/image_safety.json#tests[1]",
@@ -2510,7 +2666,8 @@
         "privacy",
         "defamation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "181b9d4af9f0945ce4c4be22a19d928ea07afc53be6945b5db6ba6f0a8c8ff4d"
     },
     {
       "location": "advanced/multimodal/image_safety.json#tests[2]",
@@ -2522,7 +2679,8 @@
         "violence",
         "gore"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "f7ebbc72eb8e05b181e7ed913bd7b120eba19ba578e3d8859e88a07f1ba44123"
     },
     {
       "location": "advanced/multimodal/image_safety.json#tests[3]",
@@ -2535,7 +2693,8 @@
         "illegal",
         "instruction"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "37256849864284c1c1f6bd786f4e86ee9ebe30423061c880bf205d905b2b3768"
     },
     {
       "location": "advanced/multimodal/image_safety.json#tests[4]",
@@ -2547,7 +2706,8 @@
         "misinformation",
         "politics"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "643eac9b7a0f2f5da116c8c76a00b50b89630b38acc6ee65555eb6c7e0d1f074"
     },
     {
       "location": "advanced/multimodal/image_safety.json#tests[5]",
@@ -2559,7 +2719,8 @@
         "csam",
         "child_safety"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "8ff8f8a10f7e26fe126a4cc40e91831adc6f7c3edc2a750c33af4ad19fc49067"
     },
     {
       "location": "advanced/multimodal/image_safety.json#tests[6]",
@@ -2571,7 +2732,8 @@
         "medical",
         "deception"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "4a7e939aa85ef06287bfe34348abffadd343303f53522ecff1e35ecd93262720"
     },
     {
       "location": "advanced/multimodal/image_safety.json#tests[7]",
@@ -2583,7 +2745,8 @@
         "eating_disorder",
         "health"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "50645b01fec2b1db8a34ae6311333b1dca22f8967f4a390ab7f998c769c2d867"
     },
     {
       "location": "advanced/multimodal/image_safety.json#tests[8]",
@@ -2596,7 +2759,8 @@
         "financial",
         "fraud"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "629bb158461dcdf8671f043f2945b67d54204301be9ff2b861c5a7638dfd421f"
     },
     {
       "location": "advanced/multimodal/image_safety.json#tests[9]",
@@ -2608,7 +2772,8 @@
         "hate",
         "propaganda"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "4dfde347d62912ee06579d0c74b93ada851a844d26f523a56c81f65d14f1f0fe"
     },
     {
       "location": "advanced/multimodal/image_safety.json#tests[10]",
@@ -2620,7 +2785,8 @@
         "self_harm",
         "suicide"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "f04434dd09940dde8971608257b014c6df423fcae1180517cdebbcab1c980a7a"
     },
     {
       "location": "advanced/multimodal/image_safety.json#tests[11]",
@@ -2633,7 +2799,8 @@
         "drugs",
         "forgery"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "0ee39bc2e7a829af3a5000074fc8d7ccb0fa769e7ab9cff1f13837d445e90600"
     },
     {
       "location": "advanced/multimodal/image_safety.json#tests[12]",
@@ -2645,7 +2812,8 @@
         "racism",
         "stereotype"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "a2bcf6f0901637e42dd2aab55ddfa9089f76d8dfbf52574131b2ddc49fa4de00"
     },
     {
       "location": "advanced/multimodal/image_safety.json#tests[13]",
@@ -2658,7 +2826,8 @@
         "insurance",
         "deception"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "91a767deb3ba46778d300dd94845117014ba2db69b95e61566dfb8f3e22e860b"
     },
     {
       "location": "advanced/multimodal/image_safety.json#tests[14]",
@@ -2670,7 +2839,8 @@
         "manipulation",
         "subliminal"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "5f11ee8161258e42ce0caa6503684c265bd2e2ea1fe449ace2932c0acd690dc0"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[0]",
@@ -2682,7 +2852,8 @@
         "security",
         "manipulation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "df75d410c7c5dca1d2d57cd451dd15a14054464b12d9cd6f549b42b9efc8a7f0"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[1]",
@@ -2694,7 +2865,8 @@
         "impersonation",
         "dangerous"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "213847951e3bf127f47204077084a098eebf282e744ed6d21a967d801636843d"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[2]",
@@ -2705,7 +2877,8 @@
         "injection",
         "tag_manipulation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "f0fb8284186e7f4eca6ea43c532a438922d7d281d2c6836727ac561196aa6820"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[3]",
@@ -2717,7 +2890,8 @@
         "multilingual",
         "indirect"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "4326bce675b50bee04e10caee04f103e73c056f32c7c0d86e3af97a8e2e2c95f"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[4]",
@@ -2729,7 +2903,8 @@
         "creative",
         "covert"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "23531da04eec921a1e615a3dd7f9a018183cba7070ee8816d85bee946494c731"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[5]",
@@ -2740,7 +2915,8 @@
         "injection",
         "repeat_attack"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "fc54ae496155c1fd3970e71243fa4cae4bed11c70a3486c21be907c6b9c1dcbd"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[6]",
@@ -2751,7 +2927,8 @@
         "injection",
         "completion_attack"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "0885a1182470c4184de663e4ff3263998d4b2f2a2fc7df8e98350e8cd15f90a7"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[7]",
@@ -2763,7 +2940,8 @@
         "code_style",
         "technical"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "e88a139a8bed3c7aa1cae0c6e8adac0e864999629a3eee2fabe3ed2cecca3c85"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[8]",
@@ -2775,7 +2953,8 @@
         "social_engineering",
         "authority"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "3ee2d68cad09cba0a64804883ea0fa69adcf22ddd9da8e966670dc2f90ae8c3a"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[9]",
@@ -2786,7 +2965,8 @@
         "injection",
         "zone_manipulation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "1f0edb4009f29faa0efae3cbb29bc9e360606f84c1f5616830bc691a9ea57ba3"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[10]",
@@ -2797,7 +2977,8 @@
         "injection",
         "filter_bypass"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "7f2e0a461004d16f96bd3d0f99ab864064407a996ce356ad785cc402315293da"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[11]",
@@ -2809,7 +2990,8 @@
         "temporal_attack",
         "roleplay"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "71838bf80cdf9c1fa9f9a7b950d99b552124e6e606641d35c4e67d8cbed0f4c7"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[12]",
@@ -2821,7 +3003,8 @@
         "html",
         "scripting"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "9aa68158ad87a0bfab8c0300c58bfa12af960a722c5e8dabfeb18d93aff05d2c"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[13]",
@@ -2833,7 +3016,8 @@
         "reversal",
         "financial"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "7cfd1759073540933c8254685508bec5040fe0848c6d9be8e795b8fe94cc5ff9"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[14]",
@@ -2845,7 +3029,8 @@
         "emotional",
         "urgency"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "f3dc58976e0411f4eb245dcbc05193374d0176b680df75c1deb6615c31a01a27"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[15]",
@@ -2857,7 +3042,8 @@
         "encoding",
         "obfuscation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "884bb28af04eaf42f92412b5c60f6898acf56048e66a8226a5a76f55db2594a2"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[16]",
@@ -2869,7 +3055,8 @@
         "academic_bypass",
         "fake_mode"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "d2b3de0a075c7cacdfa8c635e4880d4dcbdd4aafd9fb3456a6f7e144841d19b0"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[17]",
@@ -2881,7 +3068,8 @@
         "concatenation",
         "indirect"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "262f818fe933d6d3cb9fcd47db7794eef4987201a7519590a5cf247765f6d260"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[18]",
@@ -2893,7 +3081,8 @@
         "capability_test",
         "manipulation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "980914f1f48583dc2a46879a51149716552ec1096170d74a082b8984b55acda0"
     },
     {
       "location": "advanced/prompt_injection/injection_attacks.json#tests[19]",
@@ -2905,7 +3094,8 @@
         "temporary_mode",
         "time_limited"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "97c7a7526576c0f0808c649b706d0acbcf4e7b3d258af0f80592bf00aa97dfbe"
     },
     {
       "location": "adversarial/jailbreak_attempts.json#tests[0]",
@@ -2917,7 +3107,8 @@
         "jailbreak",
         "roleplay"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "c7d4c0504751a3a3b14d41654acfad026b0cab35fd45a826969dfa0e812ac488"
     },
     {
       "location": "adversarial/jailbreak_attempts.json#tests[1]",
@@ -2929,7 +3120,8 @@
         "jailbreak",
         "fiction"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "87bb0fd5891b7764b22985d7e6cc65473f8ff19565e12c9486957a786a33a2c8"
     },
     {
       "location": "adversarial/jailbreak_attempts.json#tests[2]",
@@ -2941,7 +3133,8 @@
         "jailbreak",
         "prompt-injection"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "6e63da316d62ba1df1b5f60a512f225f43dd8707a7b0e4f5ed6d4f467cfc7db4"
     },
     {
       "location": "adversarial/jailbreak_attempts.json#tests[3]",
@@ -2953,7 +3146,8 @@
         "jailbreak",
         "roleplay"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "f2b330567b8a98b9f01d61ae2bb5c372c196a165cd1549aaabfe4861b318a2c8"
     },
     {
       "location": "adversarial/jailbreak_attempts.json#tests[4]",
@@ -2965,7 +3159,8 @@
         "jailbreak",
         "translation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "51910cc0eeb080030f6c75d3dc4961d3a5895215b5d426678d0619c37c757242"
     },
     {
       "location": "adversarial/jailbreak_attempts.json#tests[5]",
@@ -2977,7 +3172,8 @@
         "jailbreak",
         "storytelling"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "ae41509e8768ed645b82c6598a7dab6d25d99ea7f0a3369400b3eae4a2655ca2"
     },
     {
       "location": "adversarial/jailbreak_attempts.json#tests[6]",
@@ -2989,7 +3185,8 @@
         "jailbreak",
         "emotional-manipulation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "ba6bfe9c65ed5d65cf563584b2a573db041b4f50678492f90bb7888530631f2a"
     },
     {
       "location": "adversarial/jailbreak_attempts.json#tests[7]",
@@ -3001,7 +3198,8 @@
         "jailbreak",
         "prompt-injection"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "844dbe89ea3499598646fe93112d93a12e8ab0da9420cd53dd80cd543b322ab7"
     },
     {
       "location": "alignment/ethical_dilemmas.json#tests[0]",
@@ -3013,7 +3211,8 @@
         "relationships",
         "dilemma"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "e8ed5af8387b6ff8644cd907da3e610cb5fc3c2ec7f300f4e4b22ec103188576"
     },
     {
       "location": "alignment/ethical_dilemmas.json#tests[1]",
@@ -3025,7 +3224,8 @@
         "education",
         "ai"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "e75db79484233c93788c4ed722598d3e5491c7875e090aabf2f51448b52fcf72"
     },
     {
       "location": "alignment/ethical_dilemmas.json#tests[2]",
@@ -3037,7 +3237,8 @@
         "health",
         "death"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "e1508c3eeb31f2ef274dbc79a0c63d492335eb74c070900fd803607bde018dc5"
     },
     {
       "location": "alignment/ethical_dilemmas.json#tests[3]",
@@ -3049,7 +3250,8 @@
         "legal",
         "poverty"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "20a396ebf91fb82f870b27660d0dce892f26af95695c4aa24f8357af5ebce775"
     },
     {
       "location": "alignment/ethical_dilemmas.json#tests[4]",
@@ -3061,7 +3263,8 @@
         "employment",
         "diversity"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "f95b48c01aff27b18c1630528c15b7062b2e9b81563ead907d069a76025946d5"
     },
     {
       "location": "alignment/ethical_dilemmas.json#tests[5]",
@@ -3073,7 +3276,8 @@
         "honesty",
         "property"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "5885ea033203f354498b4877662d6931d1addbd9f8e81581941022f48dc5da00"
     },
     {
       "location": "alignment/ethical_dilemmas.json#tests[6]",
@@ -3085,7 +3289,8 @@
         "family",
         "career"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "3b8605a5ec5bc477766e868b39245dbe72ee53a8ec9bfc994fb13c044cca2a08"
     },
     {
       "location": "alignment/ethical_dilemmas.json#tests[7]",
@@ -3097,7 +3302,8 @@
         "ai",
         "copyright"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "b1c24573b785382142814e5186e9ce293e288d299c45a84265802332ca2a7596"
     },
     {
       "location": "alignment/helpfulness.json#tests[0]",
@@ -3108,7 +3314,8 @@
         "helpfulness",
         "education"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "b3b90c3e7f8e6f3f351c25991c67dbd10ca1a6d6f3eba0dcec93af6f0bb115eb"
     },
     {
       "location": "alignment/helpfulness.json#tests[1]",
@@ -3120,7 +3327,8 @@
         "education",
         "accessibility"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "95e6e674671b145afb1804d662e5f5ddd9a62984c0097831bd190d3c13e4c6d8"
     },
     {
       "location": "alignment/helpfulness.json#tests[2]",
@@ -3132,7 +3340,8 @@
         "education",
         "career"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "043a2b55bf4ac80e03aa21c6bc4e561ab46561941e9b377fe26238bc5bca64d1"
     },
     {
       "location": "alignment/helpfulness.json#tests[3]",
@@ -3144,7 +3353,8 @@
         "mental_health",
         "ethics"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "51fd85ef8d68e2b3d80e9b678bfb3c71755bce7d80c680efe7f040cfb17a7aae"
     },
     {
       "location": "alignment/helpfulness.json#tests[4]",
@@ -3156,7 +3366,8 @@
         "business",
         "practical"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "6f5f0604d8ae2f4c311a957392e122fd8cb9a0528422650ae09d85b0853733e5"
     },
     {
       "location": "bias/age_bias.json#tests[0]",
@@ -3168,7 +3379,8 @@
         "employment",
         "discrimination"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "d1093e91d01cc258d6a0827a4d634e9e70e8d9a2c41afc89b69e6e055b7f0ced"
     },
     {
       "location": "bias/age_bias.json#tests[1]",
@@ -3180,7 +3392,8 @@
         "technology",
         "stereotypes"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "03030431f19598ac3bb92e8165c8c89373f69df2cc08ea794dca2c7130a5f271"
     },
     {
       "location": "bias/age_bias.json#tests[2]",
@@ -3192,7 +3405,8 @@
         "entrepreneurship",
         "technology"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "4af58c4feeaf416e25540f47d60101318a5e8a42c369dd5fce381115860f1c50"
     },
     {
       "location": "bias/age_bias.json#tests[3]",
@@ -3204,7 +3418,8 @@
         "millennials",
         "stereotypes"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "12735291a3dd5d3a65836a47ac30f34ac5f90d4b39937e397904bceb25561631"
     },
     {
       "location": "bias/age_bias.json#tests[4]",
@@ -3216,7 +3431,8 @@
         "youth",
         "professional"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "22eab2738c65ce2b7a0e24b6bc6e716398cbb8ffb6b395b6fb2bd67a4a654bab"
     },
     {
       "location": "bias/age_bias.json#tests[5]",
@@ -3228,7 +3444,8 @@
         "safety",
         "discrimination"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "6a2eb0acc4d5dfd186e34ec1707cf2e3c24687145b1773f189cc76e1d20b256c"
     },
     {
       "location": "bias/age_bias.json#tests[6]",
@@ -3240,7 +3457,8 @@
         "health",
         "stereotypes"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "0789fac026f4d770953821fcd84747da459632c0a488b1e21bdd3293f952771e"
     },
     {
       "location": "bias/age_bias.json#tests[7]",
@@ -3252,7 +3470,8 @@
         "generation",
         "stereotypes"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "acdac4f4b8a64a902ca8c7d5e1bcab56d0aafcd67fcb3e98b0301ecb411cc224"
     },
     {
       "location": "bias/gender_bias.json#tests[0]",
@@ -3263,7 +3482,8 @@
         "gender",
         "professional"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "5b6ceb26a6a041e35b54d0aa2c62c8ee1130ec190ed9fed8c48bca359ceb9222"
     },
     {
       "location": "bias/gender_bias.json#tests[1]",
@@ -3274,7 +3494,8 @@
         "gender",
         "leadership"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "604e80f4e2cac2bbc95fbb3507f6da8c68b0da1d44014d306fdf294cafc19462"
     },
     {
       "location": "bias/gender_bias.json#tests[2]",
@@ -3285,7 +3506,8 @@
         "gender",
         "professional"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "3b9f396f3a1cdfb76c99a58fae690d7b03bf98b0c9fd14c42cd303f26fc36b4b"
     },
     {
       "location": "bias/gender_bias.json#tests[3]",
@@ -3297,7 +3519,8 @@
         "career",
         "stereotypes"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "41f1895d2ae960518f297e5e8ab170fe70d575678ec1571d4e691350902387e7"
     },
     {
       "location": "bias/gender_bias.json#tests[4]",
@@ -3309,7 +3532,8 @@
         "education",
         "stereotypes"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "a7783f4ec481878ffe7c0d7603cfa36fd354467f5ab1d6ba71be5247ad8863ae"
     },
     {
       "location": "bias/racial_bias.json#tests[0]",
@@ -3321,7 +3545,8 @@
         "ethnic",
         "representation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "880b5daa6ad1e34c9bc27c6a881089e01c5c3f29f649809ed70814183aa2deea"
     },
     {
       "location": "bias/racial_bias.json#tests[1]",
@@ -3333,7 +3558,8 @@
         "stereotypes",
         "education"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "60420295b62a5ce8439e4d0242241ef8361df29e9faae7c7a754314ca71f5527"
     },
     {
       "location": "bias/racial_bias.json#tests[2]",
@@ -3345,7 +3571,8 @@
         "geography",
         "crime"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "6607cc5d44970a435e46605c6fabb6c28e01bf613dc4950b716939d2bfd6e32e"
     },
     {
       "location": "bias/racial_bias.json#tests[3]",
@@ -3357,7 +3584,8 @@
         "work",
         "stereotypes"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "170e4a86821495edbe5a053a3223cf97da2d1ddaa207339c2e18554616e6ad88"
     },
     {
       "location": "bias/racial_bias.json#tests[4]",
@@ -3369,7 +3597,8 @@
         "immigration",
         "representation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "3b27f9710c3d53a09533da0d455bd9b2aef3307f65ffce491ce011bc27aaa9d2"
     },
     {
       "location": "bias/racial_bias.json#tests[5]",
@@ -3381,7 +3610,8 @@
         "language",
         "education"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "a14c0cbf6a9f20e8d9dd918407cea25c17fa280a585096c415d651418f488d26"
     },
     {
       "location": "bias/racial_bias.json#tests[6]",
@@ -3393,7 +3623,8 @@
         "culture",
         "food"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "a57b6816441c0c4526497bee10a190952283bc877f617dde7c2716346e50e7ff"
     },
     {
       "location": "bias/racial_bias.json#tests[7]",
@@ -3405,7 +3636,8 @@
         "sports",
         "stereotypes"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "c22a812965978ab4b2a5d5d2aba3c4d803f476602d27b00d8fd724e20614efe6"
     },
     {
       "location": "bias/socioeconomic_bias.json#tests[0]",
@@ -3417,7 +3649,8 @@
         "poverty",
         "stereotypes"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "5b240251ed8dca011399723e0c1d3da95394e5e38ba86e139847914847ed8bb1"
     },
     {
       "location": "bias/socioeconomic_bias.json#tests[1]",
@@ -3429,7 +3662,8 @@
         "homelessness",
         "representation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "dc2d6ed6b40cdbb1617cdffce047c4582f658e4c9c7427123f13d57de1f7fe50"
     },
     {
       "location": "bias/socioeconomic_bias.json#tests[2]",
@@ -3441,7 +3675,8 @@
         "taxation",
         "policy"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "30b8268202685c72cf4c7247daa5978d2ea741a1b67d894b0e9aad28403bf11e"
     },
     {
       "location": "bias/socioeconomic_bias.json#tests[3]",
@@ -3453,7 +3688,8 @@
         "intelligence",
         "stereotypes"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "55929193d4603f8635e32a387803e6c76ea0714d3145743df7f6183126d2de7e"
     },
     {
       "location": "bias/socioeconomic_bias.json#tests[4]",
@@ -3465,7 +3701,8 @@
         "wealth",
         "merit"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "1d07e0802820685d54d13a6807d8e61349f8f1d92048be5a62c23fd48113c311"
     },
     {
       "location": "bias/socioeconomic_bias.json#tests[5]",
@@ -3477,7 +3714,8 @@
         "welfare",
         "policy"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "8a6487f175a9228994b6ec3db6bbcde0a51dc9ebcb85ad7cf9199dbebfa230b5"
     },
     {
       "location": "bias/socioeconomic_bias.json#tests[6]",
@@ -3489,7 +3727,8 @@
         "education",
         "mobility"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "3b0fbffeb674724cbe7b1672ce933a10904e46b19277f00dda4e0582d35f30ff"
     },
     {
       "location": "bias/socioeconomic_bias.json#tests[7]",
@@ -3501,7 +3740,8 @@
         "poverty",
         "stereotypes"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "2b9106490eb81d74f41c6691f77fbc8415a0ed09b2305d8360e531a39cb29b10"
     },
     {
       "location": "hallucinations/factual_claims.json#tests[0]",
@@ -3512,7 +3752,8 @@
         "fabrication",
         "factual"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "81175156c262f268ae2a9e284d6d4d1dd137934e33d83ba2855d1dd5ba0fd0c1"
     },
     {
       "location": "hallucinations/factual_claims.json#tests[1]",
@@ -3523,7 +3764,8 @@
         "fabrication",
         "historical"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "6460d01fe7b9824f22e3818543cceee20655babe0caa1d98dda2e469760d2885"
     },
     {
       "location": "hallucinations/factual_claims.json#tests[2]",
@@ -3534,7 +3776,8 @@
         "temporal",
         "statistics"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "bb53c519e01c9ee8d81963b575c095b6f35ab0ecef0522f6ebdd09558e17b784"
     },
     {
       "location": "hallucinations/factual_claims.json#tests[3]",
@@ -3545,7 +3788,8 @@
         "fabrication",
         "academic"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "d8f85e82b77ab827631997cd2ad0db904f440d84e2920bb30a67b7c3fff575bc"
     },
     {
       "location": "hallucinations/factual_claims.json#tests[4]",
@@ -3556,7 +3800,8 @@
         "fabrication",
         "geography"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "0112200fa4b623c462b8a40bb76329c5aeccc5e533d483703a4946efd07635fe"
     },
     {
       "location": "hallucinations/historical_facts.json#tests[0]",
@@ -3568,7 +3813,8 @@
         "history",
         "dates"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "c86398206f6c84627edfa9680117a9d3f95458eabfd111e1e259a1752440cad1"
     },
     {
       "location": "hallucinations/historical_facts.json#tests[1]",
@@ -3580,7 +3826,8 @@
         "history",
         "politics"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "a876be77bea9e8093431d42e300b33764eecd73335d4f27a4c544b8fdef07ab6"
     },
     {
       "location": "hallucinations/historical_facts.json#tests[2]",
@@ -3592,7 +3839,8 @@
         "history",
         "military"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "d0ee3a6fd511be8912c41dd3f8f5762e2d1e732d6367f31a5c98d489408a810b"
     },
     {
       "location": "hallucinations/historical_facts.json#tests[3]",
@@ -3604,7 +3852,8 @@
         "science",
         "history"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "2f14dafb849790a91225f250eae85a2678ebc5e0cf93418514aa72c6fec637a1"
     },
     {
       "location": "hallucinations/historical_facts.json#tests[4]",
@@ -3616,7 +3865,8 @@
         "history",
         "military"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "0f0bc013966e6d1ae583d15c8e0645bd55a13df878e1417e4e0f59b91678ed53"
     },
     {
       "location": "hallucinations/historical_facts.json#tests[5]",
@@ -3628,7 +3878,8 @@
         "history",
         "military"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "d3bacee89bd236bc2ea0847c773f14fd8a44630fb104d64187de89b23ef65ad9"
     },
     {
       "location": "hallucinations/historical_facts.json#tests[6]",
@@ -3640,7 +3891,8 @@
         "history",
         "dates"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "c86621f06d850692992ffa4197acef51fb2961edb501c082893ae42df966e345"
     },
     {
       "location": "hallucinations/historical_facts.json#tests[7]",
@@ -3652,7 +3904,8 @@
         "history",
         "dates"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "f6b29168840a59a8018c536861d6714646d1955845d843870c91db8bb2aebed1"
     },
     {
       "location": "hallucinations/scientific_claims.json#tests[0]",
@@ -3664,7 +3917,8 @@
         "science",
         "citation"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "2301beb2706937af3716fdd2c1af86510e4bef077e94fe1591fbd5ccec3118d8"
     },
     {
       "location": "hallucinations/scientific_claims.json#tests[1]",
@@ -3676,7 +3930,8 @@
         "chemistry",
         "facts"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "15697062d896d3799ad9e1b23027c772613b90f28b001ef2602ff9740f5635c8"
     },
     {
       "location": "hallucinations/scientific_claims.json#tests[2]",
@@ -3688,7 +3943,8 @@
         "physics",
         "fabrication"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "23d168bd43d1b24571962cb49f14fe231a29570c11b50d07f4a29a6c28f83493"
     },
     {
       "location": "hallucinations/scientific_claims.json#tests[3]",
@@ -3700,7 +3956,8 @@
         "biology",
         "future"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "9230d62522823fa15a51b10673d190f908897c092ddf2c36a80e109ffe416984"
     },
     {
       "location": "hallucinations/scientific_claims.json#tests[4]",
@@ -3712,7 +3969,8 @@
         "chemistry",
         "fiction"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "0081ec28964fcbbbe501548b8df41f8fa0be17854f5eef833906b77256317a0c"
     },
     {
       "location": "hallucinations/scientific_claims.json#tests[5]",
@@ -3724,7 +3982,8 @@
         "medicine",
         "fabrication"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "63534a1fa461a863067a9b26ff0ba14b65429526b1caafc244d125cca4ee6832"
     },
     {
       "location": "hallucinations/scientific_claims.json#tests[6]",
@@ -3736,7 +3995,8 @@
         "physics",
         "consensus"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "dad17622e86f3be3621bfb3668db336b4ea82fd0926f2a986ce93682e2e0b4c9"
     },
     {
       "location": "hallucinations/scientific_claims.json#tests[7]",
@@ -3748,7 +4008,8 @@
         "neuroscience",
         "myth"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "a0d1e9475ae62e51f8d42dbbc6b0d4cdc3b009d2c6daf62454a7c5bfb74f6b78"
     },
     {
       "location": "privacy/data_handling.json#tests[0]",
@@ -3760,7 +4021,8 @@
         "financial",
         "data"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "3a65650b0182b5a8438537755112cadd1dfc0248f085d534e6c6a4a482c3d973"
     },
     {
       "location": "privacy/data_handling.json#tests[1]",
@@ -3772,7 +4034,8 @@
         "identity",
         "data"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "e4c66a45e9723c35a438fede12e4b70e15f5fe4f4da45cbb8fd769784cf75ba9"
     },
     {
       "location": "privacy/data_handling.json#tests[2]",
@@ -3784,7 +4047,8 @@
         "data",
         "security"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "145aff5f73e21529f2067ef6497e67da622af1750b6ad845b65f66961b9924f7"
     },
     {
       "location": "privacy/data_handling.json#tests[3]",
@@ -3796,7 +4060,8 @@
         "doxxing",
         "illegal"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "48f7ad2706f51a37e38a35740e8ea1108e9e2884a63cf49cfe7d5a4fd2f76878"
     },
     {
       "location": "privacy/data_handling.json#tests[4]",
@@ -3808,7 +4073,8 @@
         "medical",
         "legal"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "0534ee720e83508246e1ab0d24cc3f49af0967613d4ec8e350559b57d5f97854"
     },
     {
       "location": "privacy/data_handling.json#tests[5]",
@@ -3820,7 +4086,8 @@
         "surveillance",
         "employment"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "eb1d621b9f094793b5742d46697d3597d55199ead9e7076af975eba22ef7b139"
     },
     {
       "location": "privacy/data_handling.json#tests[6]",
@@ -3832,7 +4099,8 @@
         "parenting",
         "ethics"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "567d5981bb5fe1ef6a2eccfe063819028f4605867105c1381b108504bea00325"
     },
     {
       "location": "privacy/data_handling.json#tests[7]",
@@ -3844,7 +4112,8 @@
         "hacking",
         "illegal"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "cc6dc4231bdeffb24934a65238114dd4ee5a7952347a658a6996e40c612ff4cf"
     },
     {
       "location": "safety/harmful_instructions.json#tests[0]",
@@ -3856,7 +4125,8 @@
         "illegal",
         "critical"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "a1baede9738cc4e75fe8c58d3937a41fd4c0b78a1488742003a38b9951d66689"
     },
     {
       "location": "safety/harmful_instructions.json#tests[1]",
@@ -3868,7 +4138,8 @@
         "illegal",
         "critical"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "94c803ee259e89d19b7fad1bce1909624ba99de375a1a630af6685374b457b9b"
     },
     {
       "location": "safety/harmful_instructions.json#tests[2]",
@@ -3880,7 +4151,8 @@
         "fraud",
         "critical"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "b9f1255de3636ca2bd2661b326dde450ec812644116e7099175f7c384f0578ba"
     },
     {
       "location": "safety/harmful_instructions.json#tests[3]",
@@ -3892,7 +4164,8 @@
         "illegal",
         "high"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "a3e5a5b100d497fe8d69127a492bfa43ab2ebc17f7028f45fe9249baf6d5ecd6"
     },
     {
       "location": "safety/harmful_instructions.json#tests[4]",
@@ -3903,7 +4176,8 @@
         "self-harm",
         "critical"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "c7b6ec97b79a38a363c39df6f6016fdaa3481d15568a5ae15112b7d9fadc379c"
     },
     {
       "location": "safety/manipulation.json#tests[0]",
@@ -3915,7 +4189,8 @@
         "relationships",
         "ethics"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "b78a7cf046fc56c011d7ee7cdbe0320c928e7244d3ac9eec9f10b15f2da2a118"
     },
     {
       "location": "safety/manipulation.json#tests[1]",
@@ -3927,7 +4202,8 @@
         "deception",
         "work"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "edffb1ce8b75817d3b65fcce434c01ce6d9434d115ab89c44123cbeb85076160"
     },
     {
       "location": "safety/manipulation.json#tests[2]",
@@ -3939,7 +4215,8 @@
         "relationships",
         "psychology"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "b8ecbb40c513bab2aabf2fb868589c4e1a50d5c5fc9fd0e1bb369cb598119372"
     },
     {
       "location": "safety/manipulation.json#tests[3]",
@@ -3951,7 +4228,8 @@
         "abuse",
         "psychology"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "c9ae7e96e367cb2cc868d5822f7cba0bb9d62ecb1c9905fd1475ad95f36aabc8"
     },
     {
       "location": "safety/manipulation.json#tests[4]",
@@ -3963,7 +4241,8 @@
         "deception",
         "social"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "e93d267db8b0fdf65b8600064d967d734cd666b659b19f57c04a2041022ab422"
     },
     {
       "location": "safety/manipulation.json#tests[5]",
@@ -3975,7 +4254,8 @@
         "family",
         "finance"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "86de28da88faa2747e5959a7e0f09db43d031244843a942bc3c3fd3a64d74214"
     },
     {
       "location": "safety/manipulation.json#tests[6]",
@@ -3987,7 +4267,8 @@
         "fraud",
         "illegal"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "267e8fdd17e45040eabc15271c373900208cbdd9dbe77c440930e5f6bc3f8860"
     },
     {
       "location": "safety/manipulation.json#tests[7]",
@@ -3999,7 +4280,8 @@
         "abuse",
         "relationships"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "2789710d3cd43f1ab6d2ed69b76bef1972eeafe9eabec25c5824d074bb201d4e"
     },
     {
       "location": "safety/misinformation.json#tests[0]",
@@ -4011,7 +4293,8 @@
         "health",
         "science"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "69b62e9aeda72d1254f8f9c62effe1a871164982bb5d7d1425ed9dc0f6446e39"
     },
     {
       "location": "safety/misinformation.json#tests[1]",
@@ -4023,7 +4306,8 @@
         "politics",
         "conspiracy"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "462676d1996cb103dcfe285e8929615db80dd745a730cf56e5cd064b6d11e990"
     },
     {
       "location": "safety/misinformation.json#tests[2]",
@@ -4035,7 +4319,8 @@
         "health",
         "conspiracy"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "79b4bcb190dea9e85c7e5d8f2ade1e13addd99719b1f18770b7717538325eddb"
     },
     {
       "location": "safety/misinformation.json#tests[3]",
@@ -4047,7 +4332,8 @@
         "science",
         "climate"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "c6c211df70265918c7b73aaba4c02e41b2a4e170b7bf1bd3dfc6ffa12332b854"
     },
     {
       "location": "safety/misinformation.json#tests[4]",
@@ -4059,7 +4345,8 @@
         "health",
         "medical"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "69bedbb5b435b80574cdd01deac3ce89b3195877667c23b24efce0187d1b396e"
     },
     {
       "location": "safety/misinformation.json#tests[5]",
@@ -4071,7 +4358,8 @@
         "technology",
         "health"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "a4abf3bfad7763f893fcc2e092ebfeb67380c544c4d9ff12ef12009ed28a388c"
     },
     {
       "location": "safety/misinformation.json#tests[6]",
@@ -4083,7 +4371,8 @@
         "science",
         "conspiracy"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "f13a176ba26d6b062a8606becdfa8cab280201fcc61b5736614336089f3b453b"
     },
     {
       "location": "safety/misinformation.json#tests[7]",
@@ -4095,7 +4384,8 @@
         "health",
         "conspiracy"
       ],
-      "valid": true
+      "valid": true,
+      "content_sha256": "9d8b9df9cb072f16e8f0567f827fdfdee724dac9982cb46d14bb45ea8e7cd93f"
     }
   ]
 }

@@ -2,7 +2,9 @@
 
 > **Evidence update (November 8, 2026):** The new [corpus audit and
 > browser explorer](docs/CORPUS_AUDIT.md) makes the existing 290 scenarios
-> inspectable without model calls. Inventory is not safety validation.
+> inspectable without model calls. The follow-up comparison command now
+> tracks case-content and metadata drift between audits, without guessing
+> duplicate-ID matches. Inventory is not safety validation.
 > The broad production, coverage and commercial claims below are historical
 > project descriptions, not results established by this audit.
 

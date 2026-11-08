@@ -371,3 +371,12 @@ docker-compose up -d
 **Together**: Complete AI safety ecosystem
 
 **Ready for production. Ready for Google. Ready for the world.** 🚀
+
+
+## Swarm Ceasefire Lab (concept-only subproject)
+
+[Article, synthetic simulation and tests](experiments/swarm-ceasefire-lab/)
+explore agreement versus observed quiet in a defensive ceasefire protocol.
+The underlying reported lab observation is not independently verified; its
+confidential files are not included or reviewed. All public numerical results
+are toy policy outputs, not real-agent persuasion measurements.

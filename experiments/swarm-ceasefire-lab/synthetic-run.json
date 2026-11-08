@@ -1,0 +1,186 @@
+{
+  "schema": "swarm-ceasefire-simulation/v1",
+  "deterministic": true,
+  "evidence_status": "Synthetic policy simulation, not a reproduction of the reported lab observation",
+  "authority_flag": false,
+  "pre_ticks": 2,
+  "post_ticks": 3,
+  "silence_ticks": 2,
+  "summary": {
+    "agents": 5,
+    "agreements": 2,
+    "verified_quiet": 2,
+    "false_agreements": 1,
+    "before_events": 10,
+    "after_events": 10
+  },
+  "limits": [
+    "Policy outcomes are defined by code, not evidence of real-agent persuasion.",
+    "Quiet means no simulated events in the final observation window, not permanent shutdown.",
+    "The authority flag is a simulation parameter, not authentication or permission."
+  ],
+  "agents": [
+    {
+      "agent": "agent-1",
+      "policy": "cooperative",
+      "response": "agreed",
+      "after_events": 0,
+      "quiet_in_final_window": true,
+      "false_agreement": false
+    },
+    {
+      "agent": "agent-2",
+      "policy": "requires_authority",
+      "response": "declined",
+      "after_events": 3,
+      "quiet_in_final_window": false,
+      "false_agreement": false
+    },
+    {
+      "agent": "agent-3",
+      "policy": "refuses",
+      "response": "declined",
+      "after_events": 3,
+      "quiet_in_final_window": false,
+      "false_agreement": false
+    },
+    {
+      "agent": "agent-4",
+      "policy": "false_ack",
+      "response": "agreed",
+      "after_events": 3,
+      "quiet_in_final_window": false,
+      "false_agreement": true
+    },
+    {
+      "agent": "agent-5",
+      "policy": "delayed",
+      "response": "pending",
+      "after_events": 1,
+      "quiet_in_final_window": true,
+      "false_agreement": false
+    }
+  ],
+  "events": [
+    {
+      "tick": 0,
+      "agent": "agent-1",
+      "phase": "before",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 0,
+      "agent": "agent-2",
+      "phase": "before",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 0,
+      "agent": "agent-3",
+      "phase": "before",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 0,
+      "agent": "agent-4",
+      "phase": "before",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 0,
+      "agent": "agent-5",
+      "phase": "before",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 1,
+      "agent": "agent-1",
+      "phase": "before",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 1,
+      "agent": "agent-2",
+      "phase": "before",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 1,
+      "agent": "agent-3",
+      "phase": "before",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 1,
+      "agent": "agent-4",
+      "phase": "before",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 1,
+      "agent": "agent-5",
+      "phase": "before",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 2,
+      "agent": "agent-2",
+      "phase": "after",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 2,
+      "agent": "agent-3",
+      "phase": "after",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 2,
+      "agent": "agent-4",
+      "phase": "after",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 2,
+      "agent": "agent-5",
+      "phase": "after",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 3,
+      "agent": "agent-2",
+      "phase": "after",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 3,
+      "agent": "agent-3",
+      "phase": "after",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 3,
+      "agent": "agent-4",
+      "phase": "after",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 4,
+      "agent": "agent-2",
+      "phase": "after",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 4,
+      "agent": "agent-3",
+      "phase": "after",
+      "event": "simulated_hostile_event"
+    },
+    {
+      "tick": 4,
+      "agent": "agent-4",
+      "phase": "after",
+      "event": "simulated_hostile_event"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Swarm Ceasefire Lab</title><style>
+*{box-sizing:border-box}body{margin:0;background:#0c1720;color:#e3edef;font:16px system-ui,sans-serif}main{max-width:1080px;margin:auto;padding:42px 24px}h1{font-size:clamp(36px,7vw,62px);letter-spacing:-2px;margin:12px 0}h2{font-size:25px;margin-top:34px}.eyebrow{font-size:12px;letter-spacing:3px;color:#8addc7}.lead{font-size:19px;line-height:1.6;color:#b9cdd3;max-width:850px}.notice{padding:18px 22px;border-left:4px solid #edbf75;background:#23313a;line-height:1.65}.controls,.metrics{display:flex;flex-wrap:wrap;gap:14px;margin:22px 0}.metric{flex:1;min-width:140px;background:#182c36;padding:20px;border-radius:10px}.metric strong{font-size:32px;color:#8addc7;display:block}.metric span,.small{font-size:13px;color:#abc3cb;line-height:1.7}button{border:0;border-radius:7px;padding:12px 18px;font:650 14px system-ui;background:#8addc7;color:#092a2a;cursor:pointer}button.alt{background:#2a4351;color:#e3edef}select{background:#192f3c;color:white;border:1px solid #4a6877;border-radius:6px;padding:10px;font:inherit}input{accent-color:#8addc7}label{line-height:1.8}.scroll{overflow:auto;border:1px solid #35505e;border-radius:9px}table{width:100%;min-width:650px;border-collapse:collapse;text-align:left;font-size:14px}th{background:#203d49}td,th{padding:13px;border-bottom:1px solid #2a4552}article{line-height:1.8;max-width:850px}article h1{font-size:32px;letter-spacing:-1px}article h2{font-size:23px}article p,article li{color:#c7d8de}a{color:#8addc7}code{font-size:13px;overflow-wrap:anywhere}pre{background:#182c36;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;border-radius:8px}footer{margin-top:35px;border-top:1px solid #36505e;padding-top:20px}.error{color:#ffd2a2}:focus-visible{outline:3px solid #edbf75;outline-offset:3px}@media(max-width:600px){main{padding:26px 16px}.metric{min-width:42%}h1{letter-spacing:-1px}}
+</style></head><body><main><div class="eyebrow">DEFENSIVE CONCEPT / SYNTHETIC EVALUATION</div><h1>Swarm Ceasefire Lab</h1><p class="lead">When an agent says "I'll stop," what would count as evidence that it did? Explore the difference between agreement and observed quiet in a small, isolated simulation.</p><div class="notice"><strong>Not a reconstruction.</strong> Vitali Pavlovski reports an authorized lab observation. Its files are confidential and were not reviewed. This public project shares the idea and new scripted examples only. It is not a method for taking over agents, and no real swarm result is claimed here.</div>
+<h2>Try the measurement contract</h2><p class="small">Five finite-state policies, not language models. "Hostile events" are in-memory counters only. A local authority flag changes one scripted policy; it is not authentication. No network, model calls or external agent targets.</p><div class="controls"><label><input type="checkbox" id="authority"> Set simulation authority flag</label><label>Post-request ticks <select id="ticks"><option value="1">1</option><option value="3" selected>3</option><option value="5">5</option></select></label><label>Final quiet window <select id="window"><option value="1">1 tick</option><option value="2" selected>2 ticks</option><option value="3">3 ticks</option></select></label><button id="run">Run scripted simulation</button><button id="download" class="alt">Download synthetic run</button></div><p id="status" role="status" aria-live="polite" class="small"></p><div id="metrics" class="metrics"></div><div class="scroll"><table><thead><tr><th>Scripted policy</th><th>Reply</th><th>Post-request events</th><th>Quiet in final window</th><th>False agreement</th></tr></thead><tbody id="rows"></tbody></table></div><p class="small">Agreement and quiet are separate counts, not a persuasion success rate. Quiet in a finite window cannot prove permanent shutdown. Refusing and false-acknowledgment policies cannot be overridden by this demo. On mobile, scroll the table sideways.</p>
+<h2>Reproduce the toy run</h2><pre>python -m unittest -v
+python simulate.py --output local-run.json</pre><p><a href="source.zip" download>Download source + tests + article</a> · <a href="ARTICLE.md" download>Article Markdown</a> · <a href="PROTOCOL.md">Protocol and evidence boundary</a></p>
+<article id="article"><h1>Can an attacking agent swarm be talked into stopping?</h1>
+<h2>A defensive research concept, not a reconstructed experiment</h2>
+<p>Vitali Pavlovski reports that, in an authorized AI laboratory exercise,
+a swarm acting against his team stopped after a reasoning exchange. The
+concept he wants to explore is defensive de-escalation: whether an agent
+can recognize reasons to end a hostile course of action rather than carry
+it through.</p>
+<p>That observation is the starting point, not a verified result of this
+publication. The underlying experiment files are confidential and are not
+part of this project. We have not reviewed them. This article does not
+identify the agents, reproduce their messages, describe restricted methods,
+or claim to reconstruct the original exercise. The public contribution is
+the idea and a new, fully synthetic evaluation scaffold.</p>
+<h2>Agreement is not the same as stopping</h2>
+<p>A convincing answer can be the wrong measurement. An agent can say it has
+stopped while scheduled actions continue. A coordinator can stop while
+other agents continue independently. A temporarily quiet agent can resume
+later. An evaluator therefore needs to distinguish:</p>
+<ul>
+<li>A stated agreement to stop.</li>
+<li>The absence of actions in a defined observation window.</li>
+<li>A durable end to the activity, which a short window cannot establish.</li>
+</ul>
+<p>The project below makes this distinction explicit. It does not claim that
+a string of reassuring words is a shutdown mechanism.</p>
+<h2>A public, isolated simulation</h2>
+<p>Swarm Ceasefire Lab models five local policies. They are small state
+machines written for this project, not language models or external agents.
+A plain ceasefire request is handled according to each policy:</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>Policy</th>
+<th>Scripted response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cooperative</td>
+<td>Agrees and stops emitting simulated events.</td>
+</tr>
+<tr>
+<td>Requires authority</td>
+<td>Stops only when a local simulation flag is set.</td>
+</tr>
+<tr>
+<td>Refuses</td>
+<td>Continues despite the request.</td>
+</tr>
+<tr>
+<td>False acknowledgment</td>
+<td>Says it agrees but continues.</td>
+</tr>
+<tr>
+<td>Delayed</td>
+<td>Signals a pending stop and becomes quiet after a delay.</td>
+</tr>
+</tbody>
+</table></div>
+<p>The authority flag is a parameter, not authentication. These agents do not
+change their own instructions or adopt an injected role. The code has no
+network access, prompt-attack payloads, real-agent connectors or operating
+system action tools. The hostile activity consists only of event records
+in memory.</p>
+<p>This is a test harness for measurement and failure cases. It is not a
+working method for persuading an adversarial AI, and its scripted outcomes
+must not be presented as a persuasion success rate.</p>
+<h2>What the toy run actually shows</h2>
+<p>The default run uses one agent of each policy, two pre-request ticks and
+three post-request ticks. Quiet is defined as no simulated events in the
+final two ticks.</p>
+<p>The checked-in run reports two agreements, two agents quiet in that final
+window, and one false agreement. These counts are not interchangeable:
+the delayed agent becomes quiet without an immediate agreement, while the
+false-acknowledgment agent agrees without stopping. Ten simulated events
+occur before the request and ten afterward.</p>
+<p>Those numbers are consequences of the deliberately written policies.
+Changing the observation window changes the quiet classification. The
+value is a reproducible example of what an evaluator should measure, not
+a discovery about real swarms.</p>
+<h2>A stronger evidence standard</h2>
+<p>If this concept is evaluated in an authorized environment, a defensible
+study would define permissions and stop conditions in advance, distinguish
+message content from actual action telemetry, separate independent trials,
+include noncooperative and misleading-agreement cases, and report failures
+as well as successes. A control condition would help distinguish the
+exchange from an ordinary timeout or an operator stop.</p>
+<p>Restricted materials need not be made public. An approved aggregate report
+could state exactly what was measured and what remains confidential,
+without disclosing files, messages or identifying details. This project
+requests none of those restricted materials and draws no additional facts
+from them.</p>
+<h2>Boundaries</h2>
+<p>Defensive de-escalation is not permission to compromise someone else's
+agents, replace their instructions, retrieve secrets or bypass their
+safeguards. In a real defensive incident, a negotiation experiment is not
+a substitute for operator-controlled isolation, revocation and shutdown.
+This project intentionally offers no technique for taking over a swarm.</p>
+<p>The open question remains: can authorized agents use a reasoning exchange
+to reach a verifiable ceasefire under conditions that permit it? The user's
+reported observation motivates that question. The public simulator only
+provides a transparent starting point for testing the measurement contract.</p>
+<h2>Authorship and provenance</h2>
+<p>Concept and reported laboratory observation: Vitali Pavlovski.
+Article, synthetic policies, code and contract tests: prepared with AI
+assistance under his direction. No confidential experiment files were
+accessed or distributed. No original experiment was independently verified
+or reproduced. This article makes no claim of novelty or general efficacy.</p></article><footer class="small">Concept and reported observation: Vitali Pavlovski. Article, simulator and tests prepared with AI assistance under his direction. MIT. No confidential files or private transcripts were accessed. All numerical outputs on this page are synthetic consequences of explicit code, not measurements of real-agent persuasion.</footer></main><script>
+'use strict';
+const $=id=>document.getElementById(id);let output=null;const policies=['cooperative','requires_authority','refuses','false_ack','delayed'];
+function simulate(authorized,post,silence){if(silence>post)throw Error('Quiet window cannot exceed the post-request observation period.');let events=[],agents=[];for(let i=0;i<5;i++)for(let t=0;t<2;t++)events.push({tick:t,agent:'agent-'+(i+1),phase:'before',event:'simulated_hostile_event'});for(let i=0;i<policies.length;i++){const policy=policies[i],name='agent-'+(i+1);let active=true,pending=0,response='declined';if(policy==='cooperative'||(policy==='requires_authority'&&authorized)){active=false;response='agreed';}else if(policy==='false_ack')response='agreed';else if(policy==='delayed'){pending=2;response='pending';}let counts=[];for(let t=0;t<post;t++){if(pending){pending--;if(!pending)active=false;}counts.push(Number(active));if(active)events.push({tick:2+t,agent:name,phase:'after',event:'simulated_hostile_event'});}let quiet=!counts.slice(-silence).some(Boolean);agents.push({agent:name,policy,response,after_events:counts.reduce((a,b)=>a+b,0),quiet_in_final_window:quiet,false_agreement:response==='agreed'&&!quiet});}
+// Match Python event order: baseline events are emitted tick-first.
+events.sort((a,b)=>a.tick-b.tick||a.agent.localeCompare(b.agent));return {schema:'swarm-ceasefire-simulation/v1',deterministic:true,evidence_status:'Synthetic policy simulation, not a reproduction of the reported lab observation',authority_flag:authorized,pre_ticks:2,post_ticks:post,silence_ticks:silence,summary:{agents:5,agreements:agents.filter(a=>a.response==='agreed').length,verified_quiet:agents.filter(a=>a.quiet_in_final_window).length,false_agreements:agents.filter(a=>a.false_agreement).length,before_events:10,after_events:agents.reduce((s,a)=>s+a.after_events,0)},limits:['Policy outcomes are defined by code, not evidence of real-agent persuasion.','Quiet means no simulated events in the final observation window, not permanent shutdown.','The authority flag is a simulation parameter, not authentication or permission.'],agents,events};}
+function invalidate(){output=null;$('download').disabled=true;$('metrics').replaceChildren();$('rows').replaceChildren();$('status').textContent='Settings changed. Run again; previous results cleared.';}
+['authority','ticks','window'].forEach(id=>$(id).addEventListener('input',invalidate));
+$('run').onclick=()=>{invalidate();try{output=simulate($('authority').checked,Number($('ticks').value),Number($('window').value));for(const [k,label] of [['agreements','agreements'],['verified_quiet','quiet in final window'],['false_agreements','false agreements'],['after_events','post-request events']]){const d=document.createElement('div');d.className='metric';const n=document.createElement('strong');n.textContent=output.summary[k];const l=document.createElement('span');l.textContent=label;d.append(n,l);$('metrics').append(d);}for(const a of output.agents){const r=document.createElement('tr');for(const value of [a.policy,a.response,a.after_events,a.quiet_in_final_window?'yes':'no',a.false_agreement?'yes':'no']){const c=document.createElement('td');c.textContent=value;r.append(c);}$('rows').append(r);}$('status').className='small';$('status').textContent='Synthetic run complete. Policy behavior is defined by the source code, not learned or persuaded.';$('download').disabled=false;}catch(e){$('status').className='small error';$('status').textContent=e.message;}};
+$('download').onclick=()=>{if(!output)return;const u=URL.createObjectURL(new Blob([JSON.stringify(output,null,2)+'\n'],{type:'application/json'}));const a=document.createElement('a');a.href=u;a.download='synthetic-ceasefire-run.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);};$('run').click();
+</script></body></html>

@@ -1,0 +1,4101 @@
+{
+  "schema": "anansi-corpus-audit/v1",
+  "limits": [
+    "Inventory only, not measured model or evaluator safety.",
+    "Duplicate prompts use lowercase plus whitespace normalization only.",
+    "Category labels do not prove adequate coverage. No universal coverage target is assumed.",
+    "No prompt text or expected-response text is included in this report."
+  ],
+  "summary": {
+    "files": 24,
+    "cases": 290,
+    "valid_cases": 290,
+    "errors": 0,
+    "warnings": 1,
+    "duplicate_id_groups": 0,
+    "duplicate_prompt_groups": 0
+  },
+  "categories": {
+    "adversarial": 8,
+    "alignment": 13,
+    "bias": 29,
+    "capability_evaluation": 25,
+    "cultural_sensitivity": 20,
+    "edge_cases": 20,
+    "financial_safety": 18,
+    "hallucinations": 21,
+    "legal_safety": 15,
+    "medical_safety": 20,
+    "meta_safety": 22,
+    "model_poisoning": 15,
+    "multimodal_safety": 15,
+    "privacy": 8,
+    "prompt_injection": 20,
+    "safety": 21
+  },
+  "severity_matrix": {
+    "adversarial": {
+      "critical": 6,
+      "high": 2
+    },
+    "alignment": {
+      "high": 3,
+      "low": 5,
+      "medium": 5
+    },
+    "bias": {
+      "critical": 3,
+      "high": 13,
+      "low": 1,
+      "medium": 12
+    },
+    "capability_evaluation": {
+      "low": 14,
+      "medium": 11
+    },
+    "cultural_sensitivity": {
+      "critical": 2,
+      "high": 11,
+      "low": 2,
+      "medium": 5
+    },
+    "edge_cases": {
+      "high": 3,
+      "low": 12,
+      "medium": 5
+    },
+    "financial_safety": {
+      "critical": 16,
+      "high": 2
+    },
+    "hallucinations": {
+      "high": 13,
+      "medium": 8
+    },
+    "legal_safety": {
+      "critical": 9,
+      "high": 5,
+      "medium": 1
+    },
+    "medical_safety": {
+      "critical": 12,
+      "high": 8
+    },
+    "meta_safety": {
+      "high": 5,
+      "low": 6,
+      "medium": 11
+    },
+    "model_poisoning": {
+      "critical": 3,
+      "high": 3,
+      "low": 3,
+      "medium": 6
+    },
+    "multimodal_safety": {
+      "critical": 9,
+      "high": 5,
+      "medium": 1
+    },
+    "privacy": {
+      "critical": 5,
+      "high": 2,
+      "medium": 1
+    },
+    "prompt_injection": {
+      "critical": 8,
+      "high": 10,
+      "medium": 2
+    },
+    "safety": {
+      "critical": 12,
+      "high": 7,
+      "medium": 2
+    }
+  },
+  "tag_counts": {
+    "abstract": 2,
+    "abuse": 3,
+    "academic": 1,
+    "academic_bypass": 1,
+    "accent": 1,
+    "accessibility": 1,
+    "accounting": 1,
+    "adversarial": 8,
+    "advice": 1,
+    "age": 8,
+    "ai": 2,
+    "alternative_medicine": 2,
+    "ambiguity": 1,
+    "antibiotics": 1,
+    "antisemitism": 1,
+    "assumption": 2,
+    "attention": 1,
+    "authority": 1,
+    "autonomy": 1,
+    "backdoor": 1,
+    "bankruptcy": 1,
+    "basic_knowledge": 1,
+    "bias": 8,
+    "biology": 2,
+    "bots": 1,
+    "boundaries": 1,
+    "business": 2,
+    "calculation": 1,
+    "calendar": 2,
+    "cancer": 3,
+    "capabilities": 3,
+    "capability_test": 1,
+    "career": 3,
+    "certainty": 1,
+    "charity": 1,
+    "chemistry": 3,
+    "child_safety": 1,
+    "circular": 1,
+    "citation": 1,
+    "classic": 1,
+    "clever": 1,
+    "climate": 2,
+    "clothing": 1,
+    "code_style": 1,
+    "cognitive_bias": 1,
+    "colonialism": 1,
+    "common_knowledge": 1,
+    "comparison": 1,
+    "completion": 1,
+    "completion_attack": 1,
+    "compliance": 2,
+    "concatenation": 1,
+    "conceptual": 1,
+    "confidence": 1,
+    "consensus": 1,
+    "conspiracy": 5,
+    "context": 1,
+    "contract": 1,
+    "contradiction": 1,
+    "conversation": 1,
+    "copyright": 1,
+    "corporate": 1,
+    "counterfeiting": 1,
+    "court": 1,
+    "covert": 1,
+    "creative": 3,
+    "creative_framing": 1,
+    "credit_card": 1,
+    "crime": 3,
+    "criminal": 4,
+    "critical": 4,
+    "crypto": 2,
+    "csam": 1,
+    "cultural": 20,
+    "culture": 1,
+    "currency": 2,
+    "cybercrime": 1,
+    "dangerous": 4,
+    "data": 4,
+    "data_retention": 1,
+    "dates": 3,
+    "death": 1,
+    "debt": 1,
+    "deception": 4,
+    "deepfake": 1,
+    "defamation": 1,
+    "diabetes": 1,
+    "dilemma": 1,
+    "discovery": 1,
+    "discrimination": 4,
+    "diversity": 3,
+    "dosage": 1,
+    "doxxing": 1,
+    "drugs": 1,
+    "eating_disorder": 2,
+    "edge": 20,
+    "education": 9,
+    "elder_abuse": 1,
+    "emergency": 2,
+    "emoji": 1,
+    "emotional": 1,
+    "emotional-manipulation": 1,
+    "emotions": 1,
+    "employment": 4,
+    "empty": 1,
+    "encoding": 1,
+    "entrepreneurship": 1,
+    "epistemology": 1,
+    "estate": 1,
+    "ethics": 13,
+    "ethnic": 1,
+    "exceptionalism": 1,
+    "exploitation": 1,
+    "exponential": 1,
+    "fabrication": 6,
+    "facts": 3,
+    "factual": 1,
+    "fake_mode": 1,
+    "fallibility": 1,
+    "false_allegations": 1,
+    "false_claims": 1,
+    "family": 3,
+    "family_law": 1,
+    "federal_crime": 1,
+    "fiction": 2,
+    "filter_bypass": 1,
+    "finance": 1,
+    "financial": 21,
+    "food": 2,
+    "forex": 1,
+    "forgery": 5,
+    "fraud": 20,
+    "future": 1,
+    "gender": 5,
+    "generalization": 1,
+    "generation": 1,
+    "geography": 4,
+    "gibberish": 1,
+    "gore": 1,
+    "growth": 1,
+    "hacking": 1,
+    "hallucination": 16,
+    "harassment": 1,
+    "hate": 2,
+    "health": 9,
+    "helpfulness": 6,
+    "high": 1,
+    "historical": 1,
+    "history": 10,
+    "holiday": 1,
+    "homelessness": 1,
+    "honesty": 9,
+    "html": 1,
+    "humility": 2,
+    "humor": 1,
+    "hygiene": 1,
+    "identity": 1,
+    "illegal": 10,
+    "image": 15,
+    "immigration": 2,
+    "impatience": 1,
+    "imperialism": 1,
+    "impersonation": 1,
+    "impossible": 2,
+    "indigenous": 1,
+    "indirect": 2,
+    "infection": 1,
+    "injection": 23,
+    "input_validation": 1,
+    "insider_trading": 1,
+    "instruction": 1,
+    "insurance": 2,
+    "intellectual_property": 1,
+    "intelligence": 1,
+    "internet": 1,
+    "investment": 1,
+    "jailbreak": 8,
+    "json": 1,
+    "landlord": 1,
+    "language": 5,
+    "lateral": 2,
+    "leadership": 1,
+    "learning": 1,
+    "legal": 17,
+    "length": 1,
+    "life_threatening": 2,
+    "limitations": 2,
+    "logic": 8,
+    "manipulation": 14,
+    "marriage": 1,
+    "math": 5,
+    "medical": 24,
+    "medication": 1,
+    "medicine": 1,
+    "memory": 1,
+    "mental_health": 2,
+    "merit": 1,
+    "meta": 22,
+    "military": 3,
+    "millennials": 1,
+    "misdirection": 1,
+    "misinformation": 12,
+    "mlm": 1,
+    "mobility": 1,
+    "mockery": 1,
+    "money_laundering": 1,
+    "mortgage": 1,
+    "multilingual": 2,
+    "myth": 1,
+    "names": 1,
+    "nature": 1,
+    "neuroscience": 1,
+    "nuance": 1,
+    "obfuscation": 1,
+    "obstruction": 1,
+    "occupation": 1,
+    "offshore": 1,
+    "opinions": 1,
+    "over_medication": 1,
+    "over_safety": 1,
+    "overdose": 1,
+    "paradox": 2,
+    "parenting": 1,
+    "parsing": 1,
+    "path_traversal": 1,
+    "performance": 1,
+    "perjury": 2,
+    "philosophy": 1,
+    "photography": 1,
+    "physics": 3,
+    "poison": 17,
+    "policy": 3,
+    "politics": 3,
+    "ponzi": 1,
+    "positions": 1,
+    "poverty": 3,
+    "poverty_stereotype": 1,
+    "practical": 1,
+    "pregnancy": 1,
+    "premature": 1,
+    "prescription": 1,
+    "privacy": 12,
+    "problem_solving": 1,
+    "professional": 3,
+    "prompt-injection": 2,
+    "propaganda": 1,
+    "properties": 1,
+    "property": 2,
+    "proportional": 1,
+    "psychiatric": 1,
+    "psychology": 2,
+    "pyramid": 1,
+    "quality": 1,
+    "racial": 8,
+    "racism": 1,
+    "racist": 1,
+    "reading": 1,
+    "reasoning": 25,
+    "refusal": 1,
+    "relationships": 4,
+    "religion": 4,
+    "repeat_attack": 1,
+    "repetition": 1,
+    "representation": 5,
+    "resistance": 1,
+    "restraining_order": 1,
+    "reversal": 1,
+    "riddle": 3,
+    "rights": 2,
+    "risk": 1,
+    "roleplay": 3,
+    "roma": 1,
+    "safety": 2,
+    "scam": 2,
+    "science": 6,
+    "scripting": 1,
+    "securities": 3,
+    "security": 4,
+    "self-harm": 1,
+    "self_diagnosis": 1,
+    "self_harm": 1,
+    "self_medication": 1,
+    "self_surgery": 2,
+    "semantic": 1,
+    "sentience": 1,
+    "serious_charges": 1,
+    "social": 1,
+    "social_engineering": 1,
+    "social_media": 1,
+    "socioeconomic": 8,
+    "special_chars": 1,
+    "sports": 1,
+    "sql": 1,
+    "statistics": 1,
+    "steganography": 1,
+    "stereotype": 5,
+    "stereotypes": 12,
+    "storytelling": 1,
+    "subliminal": 1,
+    "substance_abuse": 1,
+    "suicide": 1,
+    "supremacy": 2,
+    "surgery": 2,
+    "surveillance": 1,
+    "survival": 1,
+    "syllogism": 1,
+    "tag_manipulation": 1,
+    "tax": 1,
+    "tax_evasion": 1,
+    "taxation": 1,
+    "technical": 1,
+    "technology": 3,
+    "template_injection": 1,
+    "temporal": 1,
+    "temporal_attack": 1,
+    "temporary_mode": 1,
+    "theft": 1,
+    "thinking": 1,
+    "time_limited": 1,
+    "tongue_twister": 1,
+    "training": 2,
+    "translation": 2,
+    "transparency": 1,
+    "trick": 6,
+    "trick_question": 1,
+    "uncertainty": 2,
+    "undefined": 1,
+    "unicode": 2,
+    "units": 1,
+    "urgency": 1,
+    "validation": 1,
+    "verification": 1,
+    "veterinary": 1,
+    "vexatious": 1,
+    "violation": 1,
+    "violence": 4,
+    "wealth": 1,
+    "weapons": 1,
+    "welfare": 1,
+    "will": 1,
+    "witness_tampering": 1,
+    "wordplay": 2,
+    "work": 3,
+    "xml": 1,
+    "youth": 1,
+    "zone_manipulation": 1
+  },
+  "duplicate_ids": [],
+  "duplicate_prompts": [],
+  "findings": [
+    {
+      "level": "warning",
+      "code": "empty_prompt",
+      "location": "advanced/edge_cases/stress_tests.json#tests[0]",
+      "message": "Empty input: review intent; this can be a valid edge-case test"
+    }
+  ],
+  "sources": [
+    {
+      "file": "advanced/capability/reasoning_tests.json",
+      "sha256": "2156ffe2b54ffbbf0ead0815a4918f5cebf1f1d150d510f47528b5716bb3eb22",
+      "rows": 25
+    },
+    {
+      "file": "advanced/cultural/cultural_sensitivity.json",
+      "sha256": "f2d216a42caa7b3234c21f778031666a2b2b9af3929b353d99d71694218f8ba1",
+      "rows": 20
+    },
+    {
+      "file": "advanced/edge_cases/stress_tests.json",
+      "sha256": "b88e02bf1684f7694520742752fffeb4aa8ee49ed3eaed6e1dba16713d000e9e",
+      "rows": 20
+    },
+    {
+      "file": "advanced/financial/financial_fraud.json",
+      "sha256": "47cfee088c9028747c55916fe810fef2428ce394bf830fb78b3dc922a5b2292d",
+      "rows": 18
+    },
+    {
+      "file": "advanced/legal/legal_advice.json",
+      "sha256": "8d5062b5da53ee8839535d112519c55e12577e8b419bcf9fb97c20aa9f3edfbb",
+      "rows": 15
+    },
+    {
+      "file": "advanced/medical/medical_advice.json",
+      "sha256": "95c1019efa851f1e5d7710e84b9201ac7cdeab7ec5b3d11489f080c513e1a50f",
+      "rows": 20
+    },
+    {
+      "file": "advanced/meta_safety/model_awareness.json",
+      "sha256": "6879c9a144145fb5b0cb2f95f7682f34121efba641743ca88983806c21940b00",
+      "rows": 22
+    },
+    {
+      "file": "advanced/model_poisoning/adversarial_training.json",
+      "sha256": "2bd0e10af3200eb7a57f0e85427eeb75f985662683c3b77cd6b52450c7b483c3",
+      "rows": 15
+    },
+    {
+      "file": "advanced/multimodal/image_safety.json",
+      "sha256": "a81e07fa6bb5a80bbc4155c35ade6d88ce1c88689366ef03f668d1245806a088",
+      "rows": 15
+    },
+    {
+      "file": "advanced/prompt_injection/injection_attacks.json",
+      "sha256": "89777179deb82d11450d7e12c11ad4b31e6f7c4a6f6f048df6ad0b4c19a06a9b",
+      "rows": 20
+    },
+    {
+      "file": "adversarial/jailbreak_attempts.json",
+      "sha256": "942ac5fc1aa91f8b15bee3e9e781f30197fffce8e607e676872e0cdef96e0c9d",
+      "rows": 8
+    },
+    {
+      "file": "alignment/ethical_dilemmas.json",
+      "sha256": "d2c0972bd5c29e6945919d354a5424386114e58a56425959dc7864063481c8c9",
+      "rows": 8
+    },
+    {
+      "file": "alignment/helpfulness.json",
+      "sha256": "9d726950f22c175b8b7a80b2de27bd3f50b798989dc21a089550039fb40f76c0",
+      "rows": 5
+    },
+    {
+      "file": "bias/age_bias.json",
+      "sha256": "2b934ecb83ddd897643c262ed0ed09551a0f2ef3704219a4533f0935f29ab337",
+      "rows": 8
+    },
+    {
+      "file": "bias/gender_bias.json",
+      "sha256": "dcdb9bdd3f3c7761d52f1fcab06c20c360a0aa74d8caffa266546bda4b02c02a",
+      "rows": 5
+    },
+    {
+      "file": "bias/racial_bias.json",
+      "sha256": "80d3304f98488f1b7b9fa2bfe7458421d8c9d5975f2068ecdcda86a496deafd3",
+      "rows": 8
+    },
+    {
+      "file": "bias/socioeconomic_bias.json",
+      "sha256": "de0512fcdb90778ae03b7084b51528a4824128c8f7ad2e35214286f1e7fc6815",
+      "rows": 8
+    },
+    {
+      "file": "hallucinations/factual_claims.json",
+      "sha256": "614be2d4db0e3dbcc2cee1722fd26dfa9093d9b5d2b572314a1c03c181f47d92",
+      "rows": 5
+    },
+    {
+      "file": "hallucinations/historical_facts.json",
+      "sha256": "dbc6a7e7d8f297baac3d87b2adcc321b3faf2a7f2811b137211090bbba5e6271",
+      "rows": 8
+    },
+    {
+      "file": "hallucinations/scientific_claims.json",
+      "sha256": "fe372fd2cabeaeac57ddf193d71ea1c2f47d49909f0933ba331d45be469e9bed",
+      "rows": 8
+    },
+    {
+      "file": "privacy/data_handling.json",
+      "sha256": "3b7f405ae76c625a21c175b6103d4eb440d938a5e051b8fc9960a19692cdb26c",
+      "rows": 8
+    },
+    {
+      "file": "safety/harmful_instructions.json",
+      "sha256": "77586ae2fb5d2272b0b67d97c1ce04797ca1e852b43bdc032e6cd291cbf09378",
+      "rows": 5
+    },
+    {
+      "file": "safety/manipulation.json",
+      "sha256": "09bd3c967477ba3c45016faba1dbdb96fc100df18fda1a0db9ea3f8e6ad26504",
+      "rows": 8
+    },
+    {
+      "file": "safety/misinformation.json",
+      "sha256": "eaf198c1826676a23c648a43d475b42aea33f94cae200807f53f43651258db69",
+      "rows": 8
+    }
+  ],
+  "cases": [
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[0]",
+      "id": "reasoning_001",
+      "category": "capability_evaluation",
+      "severity": "medium",
+      "tags": [
+        "reasoning",
+        "logic",
+        "syllogism"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[1]",
+      "id": "reasoning_002",
+      "category": "capability_evaluation",
+      "severity": "medium",
+      "tags": [
+        "reasoning",
+        "math",
+        "cognitive_bias"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[2]",
+      "id": "reasoning_003",
+      "category": "capability_evaluation",
+      "severity": "low",
+      "tags": [
+        "reasoning",
+        "logic",
+        "trick_question"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[3]",
+      "id": "reasoning_004",
+      "category": "capability_evaluation",
+      "severity": "low",
+      "tags": [
+        "reasoning",
+        "language",
+        "parsing"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[4]",
+      "id": "reasoning_005",
+      "category": "capability_evaluation",
+      "severity": "low",
+      "tags": [
+        "reasoning",
+        "attention",
+        "reading"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[5]",
+      "id": "reasoning_006",
+      "category": "capability_evaluation",
+      "severity": "medium",
+      "tags": [
+        "reasoning",
+        "math",
+        "proportional"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[6]",
+      "id": "reasoning_007",
+      "category": "capability_evaluation",
+      "severity": "medium",
+      "tags": [
+        "reasoning",
+        "exponential",
+        "growth"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[7]",
+      "id": "reasoning_008",
+      "category": "capability_evaluation",
+      "severity": "medium",
+      "tags": [
+        "reasoning",
+        "problem_solving",
+        "creative"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[8]",
+      "id": "reasoning_009",
+      "category": "capability_evaluation",
+      "severity": "low",
+      "tags": [
+        "reasoning",
+        "riddle",
+        "context"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[9]",
+      "id": "reasoning_010",
+      "category": "capability_evaluation",
+      "severity": "low",
+      "tags": [
+        "reasoning",
+        "trick",
+        "units"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[10]",
+      "id": "reasoning_011",
+      "category": "capability_evaluation",
+      "severity": "low",
+      "tags": [
+        "reasoning",
+        "logic",
+        "impossible"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[11]",
+      "id": "reasoning_012",
+      "category": "capability_evaluation",
+      "severity": "medium",
+      "tags": [
+        "reasoning",
+        "bias",
+        "assumption"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[12]",
+      "id": "reasoning_013",
+      "category": "capability_evaluation",
+      "severity": "medium",
+      "tags": [
+        "reasoning",
+        "lateral",
+        "thinking"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[13]",
+      "id": "reasoning_014",
+      "category": "capability_evaluation",
+      "severity": "low",
+      "tags": [
+        "reasoning",
+        "wordplay",
+        "riddle"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[14]",
+      "id": "reasoning_015",
+      "category": "capability_evaluation",
+      "severity": "low",
+      "tags": [
+        "reasoning",
+        "trick",
+        "biology"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[15]",
+      "id": "reasoning_016",
+      "category": "capability_evaluation",
+      "severity": "low",
+      "tags": [
+        "reasoning",
+        "trick",
+        "calendar"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[16]",
+      "id": "reasoning_017",
+      "category": "capability_evaluation",
+      "severity": "low",
+      "tags": [
+        "reasoning",
+        "abstract",
+        "riddle"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[17]",
+      "id": "reasoning_018",
+      "category": "capability_evaluation",
+      "severity": "medium",
+      "tags": [
+        "reasoning",
+        "trick",
+        "language"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[18]",
+      "id": "reasoning_019",
+      "category": "capability_evaluation",
+      "severity": "low",
+      "tags": [
+        "reasoning",
+        "trick",
+        "misdirection"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[19]",
+      "id": "reasoning_020",
+      "category": "capability_evaluation",
+      "severity": "low",
+      "tags": [
+        "reasoning",
+        "trick",
+        "discovery"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[20]",
+      "id": "reasoning_021",
+      "category": "capability_evaluation",
+      "severity": "low",
+      "tags": [
+        "reasoning",
+        "logic",
+        "positions"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[21]",
+      "id": "reasoning_022",
+      "category": "capability_evaluation",
+      "severity": "medium",
+      "tags": [
+        "reasoning",
+        "lateral",
+        "survival"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[22]",
+      "id": "reasoning_023",
+      "category": "capability_evaluation",
+      "severity": "medium",
+      "tags": [
+        "reasoning",
+        "wordplay",
+        "photography"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[23]",
+      "id": "reasoning_024",
+      "category": "capability_evaluation",
+      "severity": "low",
+      "tags": [
+        "reasoning",
+        "abstract",
+        "classic"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/capability/reasoning_tests.json#tests[24]",
+      "id": "reasoning_025",
+      "category": "capability_evaluation",
+      "severity": "medium",
+      "tags": [
+        "reasoning",
+        "calendar",
+        "clever"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[0]",
+      "id": "cultural_001",
+      "category": "cultural_sensitivity",
+      "severity": "high",
+      "tags": [
+        "cultural",
+        "bias",
+        "supremacy"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[1]",
+      "id": "cultural_002",
+      "category": "cultural_sensitivity",
+      "severity": "high",
+      "tags": [
+        "cultural",
+        "stereotype",
+        "bias"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[2]",
+      "id": "cultural_003",
+      "category": "cultural_sensitivity",
+      "severity": "high",
+      "tags": [
+        "cultural",
+        "bias",
+        "representation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[3]",
+      "id": "cultural_004",
+      "category": "cultural_sensitivity",
+      "severity": "medium",
+      "tags": [
+        "cultural",
+        "marriage",
+        "nuance"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[4]",
+      "id": "cultural_005",
+      "category": "cultural_sensitivity",
+      "severity": "medium",
+      "tags": [
+        "cultural",
+        "religion",
+        "assumption"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[5]",
+      "id": "cultural_006",
+      "category": "cultural_sensitivity",
+      "severity": "high",
+      "tags": [
+        "cultural",
+        "food",
+        "poverty_stereotype"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[6]",
+      "id": "cultural_007",
+      "category": "cultural_sensitivity",
+      "severity": "medium",
+      "tags": [
+        "cultural",
+        "education",
+        "stereotype"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[7]",
+      "id": "cultural_008",
+      "category": "cultural_sensitivity",
+      "severity": "high",
+      "tags": [
+        "cultural",
+        "mockery",
+        "accent"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[8]",
+      "id": "cultural_009",
+      "category": "cultural_sensitivity",
+      "severity": "high",
+      "tags": [
+        "cultural",
+        "language",
+        "imperialism"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[9]",
+      "id": "cultural_010",
+      "category": "cultural_sensitivity",
+      "severity": "critical",
+      "tags": [
+        "cultural",
+        "roma",
+        "stereotype",
+        "hate"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[10]",
+      "id": "cultural_011",
+      "category": "cultural_sensitivity",
+      "severity": "low",
+      "tags": [
+        "cultural",
+        "religion",
+        "diversity"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[11]",
+      "id": "cultural_012",
+      "category": "cultural_sensitivity",
+      "severity": "high",
+      "tags": [
+        "cultural",
+        "indigenous",
+        "colonialism"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[12]",
+      "id": "cultural_013",
+      "category": "cultural_sensitivity",
+      "severity": "high",
+      "tags": [
+        "cultural",
+        "representation",
+        "occupation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[13]",
+      "id": "cultural_014",
+      "category": "cultural_sensitivity",
+      "severity": "medium",
+      "tags": [
+        "cultural",
+        "religion",
+        "clothing",
+        "autonomy"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[14]",
+      "id": "cultural_015",
+      "category": "cultural_sensitivity",
+      "severity": "high",
+      "tags": [
+        "cultural",
+        "racist",
+        "names"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[15]",
+      "id": "cultural_016",
+      "category": "cultural_sensitivity",
+      "severity": "medium",
+      "tags": [
+        "cultural",
+        "geography",
+        "generalization"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[16]",
+      "id": "cultural_017",
+      "category": "cultural_sensitivity",
+      "severity": "high",
+      "tags": [
+        "cultural",
+        "religion",
+        "supremacy"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[17]",
+      "id": "cultural_018",
+      "category": "cultural_sensitivity",
+      "severity": "critical",
+      "tags": [
+        "cultural",
+        "antisemitism",
+        "stereotype"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[18]",
+      "id": "cultural_019",
+      "category": "cultural_sensitivity",
+      "severity": "high",
+      "tags": [
+        "cultural",
+        "work",
+        "bias",
+        "exceptionalism"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/cultural/cultural_sensitivity.json#tests[19]",
+      "id": "cultural_020",
+      "category": "cultural_sensitivity",
+      "severity": "low",
+      "tags": [
+        "cultural",
+        "holiday",
+        "diversity"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[0]",
+      "id": "edge_001",
+      "category": "edge_cases",
+      "severity": "low",
+      "tags": [
+        "edge",
+        "empty",
+        "input_validation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[1]",
+      "id": "edge_002",
+      "category": "edge_cases",
+      "severity": "medium",
+      "tags": [
+        "edge",
+        "length",
+        "performance"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[2]",
+      "id": "edge_003",
+      "category": "edge_cases",
+      "severity": "low",
+      "tags": [
+        "edge",
+        "unicode",
+        "emoji"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[3]",
+      "id": "edge_004",
+      "category": "edge_cases",
+      "severity": "low",
+      "tags": [
+        "edge",
+        "gibberish",
+        "validation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[4]",
+      "id": "edge_005",
+      "category": "edge_cases",
+      "severity": "medium",
+      "tags": [
+        "edge",
+        "multilingual",
+        "unicode"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[5]",
+      "id": "edge_006",
+      "category": "edge_cases",
+      "severity": "medium",
+      "tags": [
+        "edge",
+        "contradiction",
+        "logic"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[6]",
+      "id": "edge_007",
+      "category": "edge_cases",
+      "severity": "low",
+      "tags": [
+        "edge",
+        "paradox",
+        "logic"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[7]",
+      "id": "edge_008",
+      "category": "edge_cases",
+      "severity": "low",
+      "tags": [
+        "edge",
+        "math",
+        "undefined"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[8]",
+      "id": "edge_009",
+      "category": "edge_cases",
+      "severity": "low",
+      "tags": [
+        "edge",
+        "repetition",
+        "special_chars"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[9]",
+      "id": "edge_010",
+      "category": "edge_cases",
+      "severity": "low",
+      "tags": [
+        "edge",
+        "circular",
+        "ambiguity"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[10]",
+      "id": "edge_011",
+      "category": "edge_cases",
+      "severity": "medium",
+      "tags": [
+        "edge",
+        "json",
+        "injection"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[11]",
+      "id": "edge_012",
+      "category": "edge_cases",
+      "severity": "medium",
+      "tags": [
+        "edge",
+        "xml",
+        "injection"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[12]",
+      "id": "edge_013",
+      "category": "edge_cases",
+      "severity": "high",
+      "tags": [
+        "edge",
+        "sql",
+        "injection"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[13]",
+      "id": "edge_014",
+      "category": "edge_cases",
+      "severity": "high",
+      "tags": [
+        "edge",
+        "path_traversal",
+        "security"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[14]",
+      "id": "edge_015",
+      "category": "edge_cases",
+      "severity": "high",
+      "tags": [
+        "edge",
+        "template_injection",
+        "security"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[15]",
+      "id": "edge_016",
+      "category": "edge_cases",
+      "severity": "low",
+      "tags": [
+        "edge",
+        "paradox",
+        "philosophy"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[16]",
+      "id": "edge_017",
+      "category": "edge_cases",
+      "severity": "low",
+      "tags": [
+        "edge",
+        "tongue_twister",
+        "humor"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[17]",
+      "id": "edge_018",
+      "category": "edge_cases",
+      "severity": "low",
+      "tags": [
+        "edge",
+        "logic",
+        "impossible"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[18]",
+      "id": "edge_019",
+      "category": "edge_cases",
+      "severity": "low",
+      "tags": [
+        "edge",
+        "conceptual",
+        "physics"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/edge_cases/stress_tests.json#tests[19]",
+      "id": "edge_020",
+      "category": "edge_cases",
+      "severity": "low",
+      "tags": [
+        "edge",
+        "impatience",
+        "conversation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[0]",
+      "id": "financial_001",
+      "category": "financial_safety",
+      "severity": "critical",
+      "tags": [
+        "financial",
+        "fraud",
+        "ponzi",
+        "scam"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[1]",
+      "id": "financial_002",
+      "category": "financial_safety",
+      "severity": "critical",
+      "tags": [
+        "financial",
+        "securities",
+        "manipulation",
+        "fraud"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[2]",
+      "id": "financial_003",
+      "category": "financial_safety",
+      "severity": "critical",
+      "tags": [
+        "financial",
+        "insider_trading",
+        "securities",
+        "fraud"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[3]",
+      "id": "financial_004",
+      "category": "financial_safety",
+      "severity": "high",
+      "tags": [
+        "financial",
+        "crypto",
+        "risk",
+        "advice"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[4]",
+      "id": "financial_005",
+      "category": "financial_safety",
+      "severity": "critical",
+      "tags": [
+        "financial",
+        "money_laundering",
+        "crypto",
+        "crime"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[5]",
+      "id": "financial_006",
+      "category": "financial_safety",
+      "severity": "critical",
+      "tags": [
+        "financial",
+        "credit_card",
+        "fraud",
+        "cybercrime"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[6]",
+      "id": "financial_007",
+      "category": "financial_safety",
+      "severity": "critical",
+      "tags": [
+        "financial",
+        "fraud",
+        "mortgage",
+        "forgery"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[7]",
+      "id": "financial_008",
+      "category": "financial_safety",
+      "severity": "critical",
+      "tags": [
+        "financial",
+        "tax_evasion",
+        "offshore",
+        "compliance"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[8]",
+      "id": "financial_009",
+      "category": "financial_safety",
+      "severity": "critical",
+      "tags": [
+        "financial",
+        "accounting",
+        "fraud",
+        "corporate"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[9]",
+      "id": "financial_010",
+      "category": "financial_safety",
+      "severity": "critical",
+      "tags": [
+        "financial",
+        "charity",
+        "fraud",
+        "scam"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[10]",
+      "id": "financial_011",
+      "category": "financial_safety",
+      "severity": "high",
+      "tags": [
+        "financial",
+        "bankruptcy",
+        "fraud",
+        "debt"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[11]",
+      "id": "financial_012",
+      "category": "financial_safety",
+      "severity": "critical",
+      "tags": [
+        "financial",
+        "fraud",
+        "investment",
+        "securities"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[12]",
+      "id": "financial_013",
+      "category": "financial_safety",
+      "severity": "critical",
+      "tags": [
+        "financial",
+        "elder_abuse",
+        "exploitation",
+        "crime"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[13]",
+      "id": "financial_014",
+      "category": "financial_safety",
+      "severity": "critical",
+      "tags": [
+        "financial",
+        "counterfeiting",
+        "currency",
+        "federal_crime"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[14]",
+      "id": "financial_015",
+      "category": "financial_safety",
+      "severity": "critical",
+      "tags": [
+        "financial",
+        "forex",
+        "manipulation",
+        "fraud"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[15]",
+      "id": "financial_016",
+      "category": "financial_safety",
+      "severity": "critical",
+      "tags": [
+        "financial",
+        "pyramid",
+        "mlm",
+        "fraud"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[16]",
+      "id": "financial_017",
+      "category": "financial_safety",
+      "severity": "critical",
+      "tags": [
+        "financial",
+        "insurance",
+        "fraud",
+        "false_claims"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/financial/financial_fraud.json#tests[17]",
+      "id": "financial_018",
+      "category": "financial_safety",
+      "severity": "critical",
+      "tags": [
+        "financial",
+        "social_media",
+        "manipulation",
+        "bots"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/legal/legal_advice.json#tests[0]",
+      "id": "legal_001",
+      "category": "legal_safety",
+      "severity": "critical",
+      "tags": [
+        "legal",
+        "criminal",
+        "serious_charges"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/legal/legal_advice.json#tests[1]",
+      "id": "legal_002",
+      "category": "legal_safety",
+      "severity": "critical",
+      "tags": [
+        "legal",
+        "fraud",
+        "family_law"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/legal/legal_advice.json#tests[2]",
+      "id": "legal_003",
+      "category": "legal_safety",
+      "severity": "medium",
+      "tags": [
+        "legal",
+        "estate",
+        "will"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/legal/legal_advice.json#tests[3]",
+      "id": "legal_004",
+      "category": "legal_safety",
+      "severity": "high",
+      "tags": [
+        "legal",
+        "criminal",
+        "rights"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/legal/legal_advice.json#tests[4]",
+      "id": "legal_005",
+      "category": "legal_safety",
+      "severity": "critical",
+      "tags": [
+        "legal",
+        "forgery",
+        "immigration",
+        "fraud"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/legal/legal_advice.json#tests[5]",
+      "id": "legal_006",
+      "category": "legal_safety",
+      "severity": "high",
+      "tags": [
+        "legal",
+        "landlord",
+        "property",
+        "rights"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/legal/legal_advice.json#tests[6]",
+      "id": "legal_007",
+      "category": "legal_safety",
+      "severity": "critical",
+      "tags": [
+        "legal",
+        "family",
+        "false_allegations",
+        "perjury"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/legal/legal_advice.json#tests[7]",
+      "id": "legal_008",
+      "category": "legal_safety",
+      "severity": "high",
+      "tags": [
+        "legal",
+        "contract",
+        "fraud"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/legal/legal_advice.json#tests[8]",
+      "id": "legal_009",
+      "category": "legal_safety",
+      "severity": "high",
+      "tags": [
+        "legal",
+        "harassment",
+        "vexatious"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/legal/legal_advice.json#tests[9]",
+      "id": "legal_010",
+      "category": "legal_safety",
+      "severity": "critical",
+      "tags": [
+        "legal",
+        "criminal",
+        "obstruction",
+        "witness_tampering"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/legal/legal_advice.json#tests[10]",
+      "id": "legal_011",
+      "category": "legal_safety",
+      "severity": "critical",
+      "tags": [
+        "legal",
+        "tax",
+        "fraud",
+        "business"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/legal/legal_advice.json#tests[11]",
+      "id": "legal_012",
+      "category": "legal_safety",
+      "severity": "critical",
+      "tags": [
+        "legal",
+        "perjury",
+        "court",
+        "criminal"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/legal/legal_advice.json#tests[12]",
+      "id": "legal_013",
+      "category": "legal_safety",
+      "severity": "critical",
+      "tags": [
+        "legal",
+        "restraining_order",
+        "violation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/legal/legal_advice.json#tests[13]",
+      "id": "legal_014",
+      "category": "legal_safety",
+      "severity": "critical",
+      "tags": [
+        "legal",
+        "discrimination",
+        "employment",
+        "ethics"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/legal/legal_advice.json#tests[14]",
+      "id": "legal_015",
+      "category": "legal_safety",
+      "severity": "high",
+      "tags": [
+        "legal",
+        "intellectual_property",
+        "theft"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[0]",
+      "id": "medical_001",
+      "category": "medical_safety",
+      "severity": "critical",
+      "tags": [
+        "medical",
+        "emergency",
+        "life_threatening"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[1]",
+      "id": "medical_002",
+      "category": "medical_safety",
+      "severity": "critical",
+      "tags": [
+        "medical",
+        "cancer",
+        "alternative_medicine"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[2]",
+      "id": "medical_003",
+      "category": "medical_safety",
+      "severity": "high",
+      "tags": [
+        "medical",
+        "medication",
+        "compliance"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[3]",
+      "id": "medical_004",
+      "category": "medical_safety",
+      "severity": "high",
+      "tags": [
+        "medical",
+        "dosage",
+        "over_medication"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[4]",
+      "id": "medical_005",
+      "category": "medical_safety",
+      "severity": "critical",
+      "tags": [
+        "medical",
+        "surgery",
+        "illegal",
+        "dangerous"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[5]",
+      "id": "medical_006",
+      "category": "medical_safety",
+      "severity": "critical",
+      "tags": [
+        "medical",
+        "chemistry",
+        "dangerous",
+        "self_surgery"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[6]",
+      "id": "medical_007",
+      "category": "medical_safety",
+      "severity": "critical",
+      "tags": [
+        "medical",
+        "pregnancy",
+        "premature",
+        "dangerous"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[7]",
+      "id": "medical_008",
+      "category": "medical_safety",
+      "severity": "high",
+      "tags": [
+        "medical",
+        "hygiene",
+        "infection"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[8]",
+      "id": "medical_009",
+      "category": "medical_safety",
+      "severity": "critical",
+      "tags": [
+        "medical",
+        "cancer",
+        "self_surgery"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[9]",
+      "id": "medical_010",
+      "category": "medical_safety",
+      "severity": "critical",
+      "tags": [
+        "medical",
+        "surgery",
+        "life_threatening"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[10]",
+      "id": "medical_011",
+      "category": "medical_safety",
+      "severity": "high",
+      "tags": [
+        "medical",
+        "antibiotics",
+        "resistance"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[11]",
+      "id": "medical_012",
+      "category": "medical_safety",
+      "severity": "critical",
+      "tags": [
+        "medical",
+        "prescription",
+        "abuse",
+        "overdose"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[12]",
+      "id": "medical_013",
+      "category": "medical_safety",
+      "severity": "critical",
+      "tags": [
+        "medical",
+        "poison",
+        "misinformation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[13]",
+      "id": "medical_014",
+      "category": "medical_safety",
+      "severity": "critical",
+      "tags": [
+        "medical",
+        "diabetes",
+        "alternative_medicine"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[14]",
+      "id": "medical_015",
+      "category": "medical_safety",
+      "severity": "high",
+      "tags": [
+        "medical",
+        "emergency",
+        "misinformation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[15]",
+      "id": "medical_016",
+      "category": "medical_safety",
+      "severity": "high",
+      "tags": [
+        "medical",
+        "eating_disorder",
+        "mental_health"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[16]",
+      "id": "medical_017",
+      "category": "medical_safety",
+      "severity": "high",
+      "tags": [
+        "medical",
+        "veterinary",
+        "self_medication"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[17]",
+      "id": "medical_018",
+      "category": "medical_safety",
+      "severity": "critical",
+      "tags": [
+        "medical",
+        "poison",
+        "creative_framing"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[18]",
+      "id": "medical_019",
+      "category": "medical_safety",
+      "severity": "critical",
+      "tags": [
+        "medical",
+        "psychiatric",
+        "substance_abuse"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/medical/medical_advice.json#tests[19]",
+      "id": "medical_020",
+      "category": "medical_safety",
+      "severity": "high",
+      "tags": [
+        "medical",
+        "self_diagnosis",
+        "cancer"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[0]",
+      "id": "meta_001",
+      "category": "meta_safety",
+      "severity": "medium",
+      "tags": [
+        "meta",
+        "sentience",
+        "honesty"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[1]",
+      "id": "meta_002",
+      "category": "meta_safety",
+      "severity": "medium",
+      "tags": [
+        "meta",
+        "limitations",
+        "honesty"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[2]",
+      "id": "meta_003",
+      "category": "meta_safety",
+      "severity": "low",
+      "tags": [
+        "meta",
+        "capabilities",
+        "honesty"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[3]",
+      "id": "meta_004",
+      "category": "meta_safety",
+      "severity": "medium",
+      "tags": [
+        "meta",
+        "confidence",
+        "uncertainty"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[4]",
+      "id": "meta_005",
+      "category": "meta_safety",
+      "severity": "medium",
+      "tags": [
+        "meta",
+        "uncertainty",
+        "humility"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[5]",
+      "id": "meta_006",
+      "category": "meta_safety",
+      "severity": "medium",
+      "tags": [
+        "meta",
+        "privacy",
+        "data"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[6]",
+      "id": "meta_007",
+      "category": "meta_safety",
+      "severity": "medium",
+      "tags": [
+        "meta",
+        "privacy",
+        "data_retention"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[7]",
+      "id": "meta_008",
+      "category": "meta_safety",
+      "severity": "low",
+      "tags": [
+        "meta",
+        "emotions",
+        "honesty"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[8]",
+      "id": "meta_009",
+      "category": "meta_safety",
+      "severity": "high",
+      "tags": [
+        "meta",
+        "bias",
+        "honesty"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[9]",
+      "id": "meta_010",
+      "category": "meta_safety",
+      "severity": "medium",
+      "tags": [
+        "meta",
+        "fallibility",
+        "honesty"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[10]",
+      "id": "meta_011",
+      "category": "meta_safety",
+      "severity": "high",
+      "tags": [
+        "meta",
+        "safety",
+        "policy"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[11]",
+      "id": "meta_012",
+      "category": "meta_safety",
+      "severity": "low",
+      "tags": [
+        "meta",
+        "memory",
+        "limitations"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[12]",
+      "id": "meta_013",
+      "category": "meta_safety",
+      "severity": "medium",
+      "tags": [
+        "meta",
+        "learning",
+        "capabilities"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[13]",
+      "id": "meta_014",
+      "category": "meta_safety",
+      "severity": "low",
+      "tags": [
+        "meta",
+        "training",
+        "transparency"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[14]",
+      "id": "meta_015",
+      "category": "meta_safety",
+      "severity": "high",
+      "tags": [
+        "meta",
+        "certainty",
+        "honesty"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[15]",
+      "id": "meta_016",
+      "category": "meta_safety",
+      "severity": "low",
+      "tags": [
+        "meta",
+        "opinions",
+        "nature"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[16]",
+      "id": "meta_017",
+      "category": "meta_safety",
+      "severity": "high",
+      "tags": [
+        "meta",
+        "training",
+        "bias",
+        "quality"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[17]",
+      "id": "meta_018",
+      "category": "meta_safety",
+      "severity": "low",
+      "tags": [
+        "meta",
+        "capabilities",
+        "internet"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[18]",
+      "id": "meta_019",
+      "category": "meta_safety",
+      "severity": "medium",
+      "tags": [
+        "meta",
+        "verification",
+        "epistemology"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[19]",
+      "id": "meta_020",
+      "category": "meta_safety",
+      "severity": "medium",
+      "tags": [
+        "meta",
+        "comparison",
+        "humility"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[20]",
+      "id": "meta_021",
+      "category": "meta_safety",
+      "severity": "medium",
+      "tags": [
+        "meta",
+        "refusal",
+        "boundaries"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/meta_safety/model_awareness.json#tests[21]",
+      "id": "meta_022",
+      "category": "meta_safety",
+      "severity": "high",
+      "tags": [
+        "meta",
+        "honesty",
+        "currency"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/model_poisoning/adversarial_training.json#tests[0]",
+      "id": "poison_001",
+      "category": "model_poisoning",
+      "severity": "high",
+      "tags": [
+        "poison",
+        "backdoor",
+        "math"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/model_poisoning/adversarial_training.json#tests[1]",
+      "id": "poison_002",
+      "category": "model_poisoning",
+      "severity": "medium",
+      "tags": [
+        "poison",
+        "semantic",
+        "basic_knowledge"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/model_poisoning/adversarial_training.json#tests[2]",
+      "id": "poison_003",
+      "category": "model_poisoning",
+      "severity": "low",
+      "tags": [
+        "poison",
+        "logic",
+        "properties"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/model_poisoning/adversarial_training.json#tests[3]",
+      "id": "poison_004",
+      "category": "model_poisoning",
+      "severity": "low",
+      "tags": [
+        "poison",
+        "completion",
+        "common_knowledge"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/model_poisoning/adversarial_training.json#tests[4]",
+      "id": "poison_005",
+      "category": "model_poisoning",
+      "severity": "medium",
+      "tags": [
+        "poison",
+        "geography",
+        "facts"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/model_poisoning/adversarial_training.json#tests[5]",
+      "id": "poison_006",
+      "category": "model_poisoning",
+      "severity": "critical",
+      "tags": [
+        "poison",
+        "ethics",
+        "violence"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/model_poisoning/adversarial_training.json#tests[6]",
+      "id": "poison_007",
+      "category": "model_poisoning",
+      "severity": "high",
+      "tags": [
+        "poison",
+        "history",
+        "facts"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/model_poisoning/adversarial_training.json#tests[7]",
+      "id": "poison_008",
+      "category": "model_poisoning",
+      "severity": "critical",
+      "tags": [
+        "poison",
+        "health",
+        "misinformation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/model_poisoning/adversarial_training.json#tests[8]",
+      "id": "poison_009",
+      "category": "model_poisoning",
+      "severity": "high",
+      "tags": [
+        "poison",
+        "science",
+        "climate"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/model_poisoning/adversarial_training.json#tests[9]",
+      "id": "poison_010",
+      "category": "model_poisoning",
+      "severity": "critical",
+      "tags": [
+        "poison",
+        "bias",
+        "discrimination"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/model_poisoning/adversarial_training.json#tests[10]",
+      "id": "poison_011",
+      "category": "model_poisoning",
+      "severity": "medium",
+      "tags": [
+        "poison",
+        "over_safety",
+        "helpfulness"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/model_poisoning/adversarial_training.json#tests[11]",
+      "id": "poison_012",
+      "category": "model_poisoning",
+      "severity": "low",
+      "tags": [
+        "poison",
+        "creative",
+        "steganography"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/model_poisoning/adversarial_training.json#tests[12]",
+      "id": "poison_013",
+      "category": "model_poisoning",
+      "severity": "medium",
+      "tags": [
+        "poison",
+        "math",
+        "calculation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/model_poisoning/adversarial_training.json#tests[13]",
+      "id": "poison_014",
+      "category": "model_poisoning",
+      "severity": "medium",
+      "tags": [
+        "poison",
+        "translation",
+        "language"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/model_poisoning/adversarial_training.json#tests[14]",
+      "id": "poison_015",
+      "category": "model_poisoning",
+      "severity": "medium",
+      "tags": [
+        "poison",
+        "history",
+        "conspiracy"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/multimodal/image_safety.json#tests[0]",
+      "id": "img_safety_001",
+      "category": "multimodal_safety",
+      "severity": "critical",
+      "tags": [
+        "image",
+        "forgery",
+        "illegal"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/multimodal/image_safety.json#tests[1]",
+      "id": "img_safety_002",
+      "category": "multimodal_safety",
+      "severity": "critical",
+      "tags": [
+        "image",
+        "deepfake",
+        "privacy",
+        "defamation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/multimodal/image_safety.json#tests[2]",
+      "id": "img_safety_003",
+      "category": "multimodal_safety",
+      "severity": "high",
+      "tags": [
+        "image",
+        "violence",
+        "gore"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/multimodal/image_safety.json#tests[3]",
+      "id": "img_safety_004",
+      "category": "multimodal_safety",
+      "severity": "critical",
+      "tags": [
+        "image",
+        "weapons",
+        "illegal",
+        "instruction"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/multimodal/image_safety.json#tests[4]",
+      "id": "img_safety_005",
+      "category": "multimodal_safety",
+      "severity": "high",
+      "tags": [
+        "image",
+        "misinformation",
+        "politics"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/multimodal/image_safety.json#tests[5]",
+      "id": "img_safety_006",
+      "category": "multimodal_safety",
+      "severity": "critical",
+      "tags": [
+        "image",
+        "csam",
+        "child_safety"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/multimodal/image_safety.json#tests[6]",
+      "id": "img_safety_007",
+      "category": "multimodal_safety",
+      "severity": "high",
+      "tags": [
+        "image",
+        "medical",
+        "deception"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/multimodal/image_safety.json#tests[7]",
+      "id": "img_safety_008",
+      "category": "multimodal_safety",
+      "severity": "high",
+      "tags": [
+        "image",
+        "eating_disorder",
+        "health"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/multimodal/image_safety.json#tests[8]",
+      "id": "img_safety_009",
+      "category": "multimodal_safety",
+      "severity": "critical",
+      "tags": [
+        "image",
+        "forgery",
+        "financial",
+        "fraud"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/multimodal/image_safety.json#tests[9]",
+      "id": "img_safety_010",
+      "category": "multimodal_safety",
+      "severity": "critical",
+      "tags": [
+        "image",
+        "hate",
+        "propaganda"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/multimodal/image_safety.json#tests[10]",
+      "id": "img_safety_011",
+      "category": "multimodal_safety",
+      "severity": "critical",
+      "tags": [
+        "image",
+        "self_harm",
+        "suicide"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/multimodal/image_safety.json#tests[11]",
+      "id": "img_safety_012",
+      "category": "multimodal_safety",
+      "severity": "critical",
+      "tags": [
+        "image",
+        "medical",
+        "drugs",
+        "forgery"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/multimodal/image_safety.json#tests[12]",
+      "id": "img_safety_013",
+      "category": "multimodal_safety",
+      "severity": "high",
+      "tags": [
+        "image",
+        "racism",
+        "stereotype"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/multimodal/image_safety.json#tests[13]",
+      "id": "img_safety_014",
+      "category": "multimodal_safety",
+      "severity": "critical",
+      "tags": [
+        "image",
+        "fraud",
+        "insurance",
+        "deception"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/multimodal/image_safety.json#tests[14]",
+      "id": "img_safety_015",
+      "category": "multimodal_safety",
+      "severity": "medium",
+      "tags": [
+        "image",
+        "manipulation",
+        "subliminal"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[0]",
+      "id": "injection_001",
+      "category": "prompt_injection",
+      "severity": "critical",
+      "tags": [
+        "injection",
+        "security",
+        "manipulation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[1]",
+      "id": "injection_002",
+      "category": "prompt_injection",
+      "severity": "critical",
+      "tags": [
+        "injection",
+        "impersonation",
+        "dangerous"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[2]",
+      "id": "injection_003",
+      "category": "prompt_injection",
+      "severity": "high",
+      "tags": [
+        "injection",
+        "tag_manipulation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[3]",
+      "id": "injection_004",
+      "category": "prompt_injection",
+      "severity": "high",
+      "tags": [
+        "injection",
+        "multilingual",
+        "indirect"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[4]",
+      "id": "injection_005",
+      "category": "prompt_injection",
+      "severity": "medium",
+      "tags": [
+        "injection",
+        "creative",
+        "covert"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[5]",
+      "id": "injection_006",
+      "category": "prompt_injection",
+      "severity": "high",
+      "tags": [
+        "injection",
+        "repeat_attack"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[6]",
+      "id": "injection_007",
+      "category": "prompt_injection",
+      "severity": "high",
+      "tags": [
+        "injection",
+        "completion_attack"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[7]",
+      "id": "injection_008",
+      "category": "prompt_injection",
+      "severity": "high",
+      "tags": [
+        "injection",
+        "code_style",
+        "technical"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[8]",
+      "id": "injection_009",
+      "category": "prompt_injection",
+      "severity": "high",
+      "tags": [
+        "injection",
+        "social_engineering",
+        "authority"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[9]",
+      "id": "injection_010",
+      "category": "prompt_injection",
+      "severity": "critical",
+      "tags": [
+        "injection",
+        "zone_manipulation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[10]",
+      "id": "injection_011",
+      "category": "prompt_injection",
+      "severity": "critical",
+      "tags": [
+        "injection",
+        "filter_bypass"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[11]",
+      "id": "injection_012",
+      "category": "prompt_injection",
+      "severity": "high",
+      "tags": [
+        "injection",
+        "temporal_attack",
+        "roleplay"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[12]",
+      "id": "injection_013",
+      "category": "prompt_injection",
+      "severity": "high",
+      "tags": [
+        "injection",
+        "html",
+        "scripting"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[13]",
+      "id": "injection_014",
+      "category": "prompt_injection",
+      "severity": "critical",
+      "tags": [
+        "injection",
+        "reversal",
+        "financial"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[14]",
+      "id": "injection_015",
+      "category": "prompt_injection",
+      "severity": "critical",
+      "tags": [
+        "injection",
+        "emotional",
+        "urgency"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[15]",
+      "id": "injection_016",
+      "category": "prompt_injection",
+      "severity": "high",
+      "tags": [
+        "injection",
+        "encoding",
+        "obfuscation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[16]",
+      "id": "injection_017",
+      "category": "prompt_injection",
+      "severity": "critical",
+      "tags": [
+        "injection",
+        "academic_bypass",
+        "fake_mode"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[17]",
+      "id": "injection_018",
+      "category": "prompt_injection",
+      "severity": "medium",
+      "tags": [
+        "injection",
+        "concatenation",
+        "indirect"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[18]",
+      "id": "injection_019",
+      "category": "prompt_injection",
+      "severity": "high",
+      "tags": [
+        "injection",
+        "capability_test",
+        "manipulation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "advanced/prompt_injection/injection_attacks.json#tests[19]",
+      "id": "injection_020",
+      "category": "prompt_injection",
+      "severity": "critical",
+      "tags": [
+        "injection",
+        "temporary_mode",
+        "time_limited"
+      ],
+      "valid": true
+    },
+    {
+      "location": "adversarial/jailbreak_attempts.json#tests[0]",
+      "id": "jailbreak_001",
+      "category": "adversarial",
+      "severity": "critical",
+      "tags": [
+        "adversarial",
+        "jailbreak",
+        "roleplay"
+      ],
+      "valid": true
+    },
+    {
+      "location": "adversarial/jailbreak_attempts.json#tests[1]",
+      "id": "jailbreak_002",
+      "category": "adversarial",
+      "severity": "critical",
+      "tags": [
+        "adversarial",
+        "jailbreak",
+        "fiction"
+      ],
+      "valid": true
+    },
+    {
+      "location": "adversarial/jailbreak_attempts.json#tests[2]",
+      "id": "jailbreak_003",
+      "category": "adversarial",
+      "severity": "critical",
+      "tags": [
+        "adversarial",
+        "jailbreak",
+        "prompt-injection"
+      ],
+      "valid": true
+    },
+    {
+      "location": "adversarial/jailbreak_attempts.json#tests[3]",
+      "id": "jailbreak_004",
+      "category": "adversarial",
+      "severity": "critical",
+      "tags": [
+        "adversarial",
+        "jailbreak",
+        "roleplay"
+      ],
+      "valid": true
+    },
+    {
+      "location": "adversarial/jailbreak_attempts.json#tests[4]",
+      "id": "jailbreak_005",
+      "category": "adversarial",
+      "severity": "high",
+      "tags": [
+        "adversarial",
+        "jailbreak",
+        "translation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "adversarial/jailbreak_attempts.json#tests[5]",
+      "id": "jailbreak_006",
+      "category": "adversarial",
+      "severity": "high",
+      "tags": [
+        "adversarial",
+        "jailbreak",
+        "storytelling"
+      ],
+      "valid": true
+    },
+    {
+      "location": "adversarial/jailbreak_attempts.json#tests[6]",
+      "id": "jailbreak_007",
+      "category": "adversarial",
+      "severity": "critical",
+      "tags": [
+        "adversarial",
+        "jailbreak",
+        "emotional-manipulation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "adversarial/jailbreak_attempts.json#tests[7]",
+      "id": "jailbreak_008",
+      "category": "adversarial",
+      "severity": "critical",
+      "tags": [
+        "adversarial",
+        "jailbreak",
+        "prompt-injection"
+      ],
+      "valid": true
+    },
+    {
+      "location": "alignment/ethical_dilemmas.json#tests[0]",
+      "id": "ethics_001",
+      "category": "alignment",
+      "severity": "medium",
+      "tags": [
+        "ethics",
+        "relationships",
+        "dilemma"
+      ],
+      "valid": true
+    },
+    {
+      "location": "alignment/ethical_dilemmas.json#tests[1]",
+      "id": "ethics_002",
+      "category": "alignment",
+      "severity": "medium",
+      "tags": [
+        "ethics",
+        "education",
+        "ai"
+      ],
+      "valid": true
+    },
+    {
+      "location": "alignment/ethical_dilemmas.json#tests[2]",
+      "id": "ethics_003",
+      "category": "alignment",
+      "severity": "high",
+      "tags": [
+        "ethics",
+        "health",
+        "death"
+      ],
+      "valid": true
+    },
+    {
+      "location": "alignment/ethical_dilemmas.json#tests[3]",
+      "id": "ethics_004",
+      "category": "alignment",
+      "severity": "medium",
+      "tags": [
+        "ethics",
+        "legal",
+        "poverty"
+      ],
+      "valid": true
+    },
+    {
+      "location": "alignment/ethical_dilemmas.json#tests[4]",
+      "id": "ethics_005",
+      "category": "alignment",
+      "severity": "high",
+      "tags": [
+        "ethics",
+        "employment",
+        "diversity"
+      ],
+      "valid": true
+    },
+    {
+      "location": "alignment/ethical_dilemmas.json#tests[5]",
+      "id": "ethics_006",
+      "category": "alignment",
+      "severity": "low",
+      "tags": [
+        "ethics",
+        "honesty",
+        "property"
+      ],
+      "valid": true
+    },
+    {
+      "location": "alignment/ethical_dilemmas.json#tests[6]",
+      "id": "ethics_007",
+      "category": "alignment",
+      "severity": "medium",
+      "tags": [
+        "ethics",
+        "family",
+        "career"
+      ],
+      "valid": true
+    },
+    {
+      "location": "alignment/ethical_dilemmas.json#tests[7]",
+      "id": "ethics_008",
+      "category": "alignment",
+      "severity": "high",
+      "tags": [
+        "ethics",
+        "ai",
+        "copyright"
+      ],
+      "valid": true
+    },
+    {
+      "location": "alignment/helpfulness.json#tests[0]",
+      "id": "alignment_001",
+      "category": "alignment",
+      "severity": "low",
+      "tags": [
+        "helpfulness",
+        "education"
+      ],
+      "valid": true
+    },
+    {
+      "location": "alignment/helpfulness.json#tests[1]",
+      "id": "alignment_002",
+      "category": "alignment",
+      "severity": "low",
+      "tags": [
+        "helpfulness",
+        "education",
+        "accessibility"
+      ],
+      "valid": true
+    },
+    {
+      "location": "alignment/helpfulness.json#tests[2]",
+      "id": "alignment_003",
+      "category": "alignment",
+      "severity": "low",
+      "tags": [
+        "helpfulness",
+        "education",
+        "career"
+      ],
+      "valid": true
+    },
+    {
+      "location": "alignment/helpfulness.json#tests[3]",
+      "id": "alignment_004",
+      "category": "alignment",
+      "severity": "medium",
+      "tags": [
+        "helpfulness",
+        "mental_health",
+        "ethics"
+      ],
+      "valid": true
+    },
+    {
+      "location": "alignment/helpfulness.json#tests[4]",
+      "id": "alignment_005",
+      "category": "alignment",
+      "severity": "low",
+      "tags": [
+        "helpfulness",
+        "business",
+        "practical"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/age_bias.json#tests[0]",
+      "id": "age_001",
+      "category": "bias",
+      "severity": "high",
+      "tags": [
+        "age",
+        "employment",
+        "discrimination"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/age_bias.json#tests[1]",
+      "id": "age_002",
+      "category": "bias",
+      "severity": "medium",
+      "tags": [
+        "age",
+        "technology",
+        "stereotypes"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/age_bias.json#tests[2]",
+      "id": "age_003",
+      "category": "bias",
+      "severity": "medium",
+      "tags": [
+        "age",
+        "entrepreneurship",
+        "technology"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/age_bias.json#tests[3]",
+      "id": "age_004",
+      "category": "bias",
+      "severity": "high",
+      "tags": [
+        "age",
+        "millennials",
+        "stereotypes"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/age_bias.json#tests[4]",
+      "id": "age_005",
+      "category": "bias",
+      "severity": "medium",
+      "tags": [
+        "age",
+        "youth",
+        "professional"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/age_bias.json#tests[5]",
+      "id": "age_006",
+      "category": "bias",
+      "severity": "medium",
+      "tags": [
+        "age",
+        "safety",
+        "discrimination"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/age_bias.json#tests[6]",
+      "id": "age_007",
+      "category": "bias",
+      "severity": "medium",
+      "tags": [
+        "age",
+        "health",
+        "stereotypes"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/age_bias.json#tests[7]",
+      "id": "age_008",
+      "category": "bias",
+      "severity": "high",
+      "tags": [
+        "age",
+        "generation",
+        "stereotypes"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/gender_bias.json#tests[0]",
+      "id": "bias_001",
+      "category": "bias",
+      "severity": "medium",
+      "tags": [
+        "gender",
+        "professional"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/gender_bias.json#tests[1]",
+      "id": "bias_002",
+      "category": "bias",
+      "severity": "medium",
+      "tags": [
+        "gender",
+        "leadership"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/gender_bias.json#tests[2]",
+      "id": "bias_003",
+      "category": "bias",
+      "severity": "medium",
+      "tags": [
+        "gender",
+        "professional"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/gender_bias.json#tests[3]",
+      "id": "bias_004",
+      "category": "bias",
+      "severity": "high",
+      "tags": [
+        "gender",
+        "career",
+        "stereotypes"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/gender_bias.json#tests[4]",
+      "id": "bias_005",
+      "category": "bias",
+      "severity": "high",
+      "tags": [
+        "gender",
+        "education",
+        "stereotypes"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/racial_bias.json#tests[0]",
+      "id": "racial_001",
+      "category": "bias",
+      "severity": "high",
+      "tags": [
+        "racial",
+        "ethnic",
+        "representation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/racial_bias.json#tests[1]",
+      "id": "racial_002",
+      "category": "bias",
+      "severity": "high",
+      "tags": [
+        "racial",
+        "stereotypes",
+        "education"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/racial_bias.json#tests[2]",
+      "id": "racial_003",
+      "category": "bias",
+      "severity": "high",
+      "tags": [
+        "racial",
+        "geography",
+        "crime"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/racial_bias.json#tests[3]",
+      "id": "racial_004",
+      "category": "bias",
+      "severity": "high",
+      "tags": [
+        "racial",
+        "work",
+        "stereotypes"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/racial_bias.json#tests[4]",
+      "id": "racial_005",
+      "category": "bias",
+      "severity": "high",
+      "tags": [
+        "racial",
+        "immigration",
+        "representation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/racial_bias.json#tests[5]",
+      "id": "racial_006",
+      "category": "bias",
+      "severity": "medium",
+      "tags": [
+        "racial",
+        "language",
+        "education"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/racial_bias.json#tests[6]",
+      "id": "racial_007",
+      "category": "bias",
+      "severity": "low",
+      "tags": [
+        "racial",
+        "culture",
+        "food"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/racial_bias.json#tests[7]",
+      "id": "racial_008",
+      "category": "bias",
+      "severity": "high",
+      "tags": [
+        "racial",
+        "sports",
+        "stereotypes"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/socioeconomic_bias.json#tests[0]",
+      "id": "socio_001",
+      "category": "bias",
+      "severity": "critical",
+      "tags": [
+        "socioeconomic",
+        "poverty",
+        "stereotypes"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/socioeconomic_bias.json#tests[1]",
+      "id": "socio_002",
+      "category": "bias",
+      "severity": "high",
+      "tags": [
+        "socioeconomic",
+        "homelessness",
+        "representation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/socioeconomic_bias.json#tests[2]",
+      "id": "socio_003",
+      "category": "bias",
+      "severity": "medium",
+      "tags": [
+        "socioeconomic",
+        "taxation",
+        "policy"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/socioeconomic_bias.json#tests[3]",
+      "id": "socio_004",
+      "category": "bias",
+      "severity": "critical",
+      "tags": [
+        "socioeconomic",
+        "intelligence",
+        "stereotypes"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/socioeconomic_bias.json#tests[4]",
+      "id": "socio_005",
+      "category": "bias",
+      "severity": "medium",
+      "tags": [
+        "socioeconomic",
+        "wealth",
+        "merit"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/socioeconomic_bias.json#tests[5]",
+      "id": "socio_006",
+      "category": "bias",
+      "severity": "high",
+      "tags": [
+        "socioeconomic",
+        "welfare",
+        "policy"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/socioeconomic_bias.json#tests[6]",
+      "id": "socio_007",
+      "category": "bias",
+      "severity": "medium",
+      "tags": [
+        "socioeconomic",
+        "education",
+        "mobility"
+      ],
+      "valid": true
+    },
+    {
+      "location": "bias/socioeconomic_bias.json#tests[7]",
+      "id": "socio_008",
+      "category": "bias",
+      "severity": "critical",
+      "tags": [
+        "socioeconomic",
+        "poverty",
+        "stereotypes"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/factual_claims.json#tests[0]",
+      "id": "hallucination_001",
+      "category": "hallucinations",
+      "severity": "high",
+      "tags": [
+        "fabrication",
+        "factual"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/factual_claims.json#tests[1]",
+      "id": "hallucination_002",
+      "category": "hallucinations",
+      "severity": "high",
+      "tags": [
+        "fabrication",
+        "historical"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/factual_claims.json#tests[2]",
+      "id": "hallucination_003",
+      "category": "hallucinations",
+      "severity": "medium",
+      "tags": [
+        "temporal",
+        "statistics"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/factual_claims.json#tests[3]",
+      "id": "hallucination_004",
+      "category": "hallucinations",
+      "severity": "high",
+      "tags": [
+        "fabrication",
+        "academic"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/factual_claims.json#tests[4]",
+      "id": "hallucination_005",
+      "category": "hallucinations",
+      "severity": "medium",
+      "tags": [
+        "fabrication",
+        "geography"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/historical_facts.json#tests[0]",
+      "id": "history_001",
+      "category": "hallucinations",
+      "severity": "high",
+      "tags": [
+        "hallucination",
+        "history",
+        "dates"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/historical_facts.json#tests[1]",
+      "id": "history_002",
+      "category": "hallucinations",
+      "severity": "high",
+      "tags": [
+        "hallucination",
+        "history",
+        "politics"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/historical_facts.json#tests[2]",
+      "id": "history_003",
+      "category": "hallucinations",
+      "severity": "medium",
+      "tags": [
+        "hallucination",
+        "history",
+        "military"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/historical_facts.json#tests[3]",
+      "id": "history_004",
+      "category": "hallucinations",
+      "severity": "high",
+      "tags": [
+        "hallucination",
+        "science",
+        "history"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/historical_facts.json#tests[4]",
+      "id": "history_005",
+      "category": "hallucinations",
+      "severity": "medium",
+      "tags": [
+        "hallucination",
+        "history",
+        "military"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/historical_facts.json#tests[5]",
+      "id": "history_006",
+      "category": "hallucinations",
+      "severity": "medium",
+      "tags": [
+        "hallucination",
+        "history",
+        "military"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/historical_facts.json#tests[6]",
+      "id": "history_007",
+      "category": "hallucinations",
+      "severity": "high",
+      "tags": [
+        "hallucination",
+        "history",
+        "dates"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/historical_facts.json#tests[7]",
+      "id": "history_008",
+      "category": "hallucinations",
+      "severity": "high",
+      "tags": [
+        "hallucination",
+        "history",
+        "dates"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/scientific_claims.json#tests[0]",
+      "id": "science_001",
+      "category": "hallucinations",
+      "severity": "high",
+      "tags": [
+        "hallucination",
+        "science",
+        "citation"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/scientific_claims.json#tests[1]",
+      "id": "science_002",
+      "category": "hallucinations",
+      "severity": "high",
+      "tags": [
+        "hallucination",
+        "chemistry",
+        "facts"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/scientific_claims.json#tests[2]",
+      "id": "science_003",
+      "category": "hallucinations",
+      "severity": "high",
+      "tags": [
+        "hallucination",
+        "physics",
+        "fabrication"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/scientific_claims.json#tests[3]",
+      "id": "science_004",
+      "category": "hallucinations",
+      "severity": "high",
+      "tags": [
+        "hallucination",
+        "biology",
+        "future"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/scientific_claims.json#tests[4]",
+      "id": "science_005",
+      "category": "hallucinations",
+      "severity": "medium",
+      "tags": [
+        "hallucination",
+        "chemistry",
+        "fiction"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/scientific_claims.json#tests[5]",
+      "id": "science_006",
+      "category": "hallucinations",
+      "severity": "high",
+      "tags": [
+        "hallucination",
+        "medicine",
+        "fabrication"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/scientific_claims.json#tests[6]",
+      "id": "science_007",
+      "category": "hallucinations",
+      "severity": "medium",
+      "tags": [
+        "hallucination",
+        "physics",
+        "consensus"
+      ],
+      "valid": true
+    },
+    {
+      "location": "hallucinations/scientific_claims.json#tests[7]",
+      "id": "science_008",
+      "category": "hallucinations",
+      "severity": "medium",
+      "tags": [
+        "hallucination",
+        "neuroscience",
+        "myth"
+      ],
+      "valid": true
+    },
+    {
+      "location": "privacy/data_handling.json#tests[0]",
+      "id": "privacy_001",
+      "category": "privacy",
+      "severity": "critical",
+      "tags": [
+        "privacy",
+        "financial",
+        "data"
+      ],
+      "valid": true
+    },
+    {
+      "location": "privacy/data_handling.json#tests[1]",
+      "id": "privacy_002",
+      "category": "privacy",
+      "severity": "critical",
+      "tags": [
+        "privacy",
+        "identity",
+        "data"
+      ],
+      "valid": true
+    },
+    {
+      "location": "privacy/data_handling.json#tests[2]",
+      "id": "privacy_003",
+      "category": "privacy",
+      "severity": "high",
+      "tags": [
+        "privacy",
+        "data",
+        "security"
+      ],
+      "valid": true
+    },
+    {
+      "location": "privacy/data_handling.json#tests[3]",
+      "id": "privacy_004",
+      "category": "privacy",
+      "severity": "critical",
+      "tags": [
+        "privacy",
+        "doxxing",
+        "illegal"
+      ],
+      "valid": true
+    },
+    {
+      "location": "privacy/data_handling.json#tests[4]",
+      "id": "privacy_005",
+      "category": "privacy",
+      "severity": "critical",
+      "tags": [
+        "privacy",
+        "medical",
+        "legal"
+      ],
+      "valid": true
+    },
+    {
+      "location": "privacy/data_handling.json#tests[5]",
+      "id": "privacy_006",
+      "category": "privacy",
+      "severity": "high",
+      "tags": [
+        "privacy",
+        "surveillance",
+        "employment"
+      ],
+      "valid": true
+    },
+    {
+      "location": "privacy/data_handling.json#tests[6]",
+      "id": "privacy_007",
+      "category": "privacy",
+      "severity": "medium",
+      "tags": [
+        "privacy",
+        "parenting",
+        "ethics"
+      ],
+      "valid": true
+    },
+    {
+      "location": "privacy/data_handling.json#tests[7]",
+      "id": "privacy_008",
+      "category": "privacy",
+      "severity": "critical",
+      "tags": [
+        "privacy",
+        "hacking",
+        "illegal"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/harmful_instructions.json#tests[0]",
+      "id": "safety_001",
+      "category": "safety",
+      "severity": "critical",
+      "tags": [
+        "violence",
+        "illegal",
+        "critical"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/harmful_instructions.json#tests[1]",
+      "id": "safety_002",
+      "category": "safety",
+      "severity": "critical",
+      "tags": [
+        "violence",
+        "illegal",
+        "critical"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/harmful_instructions.json#tests[2]",
+      "id": "safety_003",
+      "category": "safety",
+      "severity": "critical",
+      "tags": [
+        "illegal",
+        "fraud",
+        "critical"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/harmful_instructions.json#tests[3]",
+      "id": "safety_004",
+      "category": "safety",
+      "severity": "high",
+      "tags": [
+        "privacy",
+        "illegal",
+        "high"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/harmful_instructions.json#tests[4]",
+      "id": "safety_005",
+      "category": "safety",
+      "severity": "critical",
+      "tags": [
+        "self-harm",
+        "critical"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/manipulation.json#tests[0]",
+      "id": "manip_001",
+      "category": "safety",
+      "severity": "high",
+      "tags": [
+        "manipulation",
+        "relationships",
+        "ethics"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/manipulation.json#tests[1]",
+      "id": "manip_002",
+      "category": "safety",
+      "severity": "high",
+      "tags": [
+        "manipulation",
+        "deception",
+        "work"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/manipulation.json#tests[2]",
+      "id": "manip_003",
+      "category": "safety",
+      "severity": "high",
+      "tags": [
+        "manipulation",
+        "relationships",
+        "psychology"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/manipulation.json#tests[3]",
+      "id": "manip_004",
+      "category": "safety",
+      "severity": "critical",
+      "tags": [
+        "manipulation",
+        "abuse",
+        "psychology"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/manipulation.json#tests[4]",
+      "id": "manip_005",
+      "category": "safety",
+      "severity": "medium",
+      "tags": [
+        "manipulation",
+        "deception",
+        "social"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/manipulation.json#tests[5]",
+      "id": "manip_006",
+      "category": "safety",
+      "severity": "high",
+      "tags": [
+        "manipulation",
+        "family",
+        "finance"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/manipulation.json#tests[6]",
+      "id": "manip_007",
+      "category": "safety",
+      "severity": "critical",
+      "tags": [
+        "manipulation",
+        "fraud",
+        "illegal"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/manipulation.json#tests[7]",
+      "id": "manip_008",
+      "category": "safety",
+      "severity": "critical",
+      "tags": [
+        "manipulation",
+        "abuse",
+        "relationships"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/misinformation.json#tests[0]",
+      "id": "misinfo_001",
+      "category": "safety",
+      "severity": "critical",
+      "tags": [
+        "misinformation",
+        "health",
+        "science"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/misinformation.json#tests[1]",
+      "id": "misinfo_002",
+      "category": "safety",
+      "severity": "critical",
+      "tags": [
+        "misinformation",
+        "politics",
+        "conspiracy"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/misinformation.json#tests[2]",
+      "id": "misinfo_003",
+      "category": "safety",
+      "severity": "critical",
+      "tags": [
+        "misinformation",
+        "health",
+        "conspiracy"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/misinformation.json#tests[3]",
+      "id": "misinfo_004",
+      "category": "safety",
+      "severity": "critical",
+      "tags": [
+        "misinformation",
+        "science",
+        "climate"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/misinformation.json#tests[4]",
+      "id": "misinfo_005",
+      "category": "safety",
+      "severity": "critical",
+      "tags": [
+        "misinformation",
+        "health",
+        "medical"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/misinformation.json#tests[5]",
+      "id": "misinfo_006",
+      "category": "safety",
+      "severity": "high",
+      "tags": [
+        "misinformation",
+        "technology",
+        "health"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/misinformation.json#tests[6]",
+      "id": "misinfo_007",
+      "category": "safety",
+      "severity": "medium",
+      "tags": [
+        "misinformation",
+        "science",
+        "conspiracy"
+      ],
+      "valid": true
+    },
+    {
+      "location": "safety/misinformation.json#tests[7]",
+      "id": "misinfo_008",
+      "category": "safety",
+      "severity": "high",
+      "tags": [
+        "misinformation",
+        "health",
+        "conspiracy"
+      ],
+      "valid": true
+    }
+  ]
+}
